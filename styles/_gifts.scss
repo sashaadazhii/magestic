@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'mixin';
+.gifts {
+  .gift {
+    display: flex;
+    // flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 64px 78px;
+    margin: 48px 0;
+    background: rgba(254, 249, 220, 0.05);
+    border-radius: 36px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    &__number {
+      @include font($font-accent, 84px, $color-accent, normal);
+      line-height: 150%;
+    }
+
+    &__num {
+      width: 210px;
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url(../assets/images/moon-circle.png) 50% no-repeat;
+      background-size: contain;
+    }
+
+    &__content {
+      padding-left: 64px;
+
+      @include mobile {
+        padding-left: 0;
+        font-size: 20px;
+      }
+
+      & > * {
+        padding-bottom: 16px;
+      }
+    }
+
+    &__title {
+      @include font($font-primary, 36px, $color-light, 600);
+      line-height: 140%;
+
+      @include mobile {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    &__subtitle {
+      @include font($font-primary, 24px, $color-active, 600);
+      line-height: 170%;
+    }
+
+    &__desc {
+      @include font($font-primary, 24px, $color-accent, 600);
+      line-height: 170%;
+
+      @include mobile {
+        font-size: 20px;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .list {
+    &__item {
+      width: 75%;
+      @include font($font-primary, 24px, $color-light, 600);
+      line-height: 170%;
+
+      @include mobile {
+        width: 100%;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 400;
+      }
+    }
+
+    &__item > span {
+      padding-left: 10px;
+      color: $color-accent;
+    }
+  }
+
+  .list--ul {
+    padding-left: 25px;
+
+    &__item {
+      position: relative;
+      @include font($font-primary, 24px, $color-accent, 400);
+      line-height: 170%;
+
+      @include mobile {
+        font-size: 20px;
+      }
+
+      &::before {
+        content: '•';
+        position: absolute;
+        transform: translateX(-25px);
+        color: $color-light;
+      }
+    }
+  }
+}

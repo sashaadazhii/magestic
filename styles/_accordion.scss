@@ -1,0 +1,51 @@
+.top {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 30px 48px;
+  border-radius: 24px;
+  background-color: $color-accent;
+  @include font($font-primary, 20px !important, $color-dark, 700);
+  line-height: 170%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+
+  @include mobile {
+    padding: 12px;
+  }
+}
+
+.bottom {
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 24px;
+  background-color: $color-accent;
+  @include font($font-primary, 20px !important, $color-dark, 700);
+  line-height: 170%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+
+  p {
+    padding: 30px 48px;
+
+    @include mobile {
+      padding: 12px;
+    }
+  }
+}
+
+.active,
+.top:hover,
+.active,
+.top:active {
+  background-color: $color-active;
+  color: $color-accent;
+}
+
+.open {
+  font-size: 40px;
+  padding-left: 36px;
+}

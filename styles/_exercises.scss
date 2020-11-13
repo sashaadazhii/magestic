@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixin';
+
+.exercises {
+  .icon-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 80px auto 36px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 24px 0;
+    @include font($font-primary, 24px, $color-dark, 600);
+    line-height: 170%;
+    text-align: center;
+  }
+
+  .accordion {
+    margin: 64px 0;
+  }
+
+  .example-block {
+    padding: 48px;
+    margin-bottom: 45px;
+    background-color: $color-accent;
+    border-radius: 36px;
+
+    @include mobile {
+      padding: 20px 12px;
+    }
+
+    .icon-wrapper {
+      width: 64px;
+      height: 12px;
+      margin: 0 auto;
+    }
+  }
+
+  .example {
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin-bottom: 36px;
+    }
+
+    &__title {
+      @include font($font-primary, 36px, $color-dark, 700);
+      line-height: 140%;
+      @include mobile {
+        line-height: inherit;
+      }
+    }
+
+    &__desc {
+      @include font($font-primary, 24px, $color-dark, 600);
+      line-height: 170%;
+
+      @include mobile {
+        line-height: inherit;
+      }
+    }
+
+    &__point,
+    &__content {
+      @include font($font-primary, 24px, $color-dark, 400);
+      line-height: 170%;
+
+      @include mobile {
+        line-height: inherit;
+      }
+    }
+  }
+}
