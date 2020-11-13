@@ -184,6 +184,7 @@ body {
 
 .top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   padding: 30px 48px;
@@ -192,7 +193,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px !important;
   color: #1f160a;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 170%;
   cursor: pointer;
   outline: none;
@@ -215,10 +216,10 @@ body {
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out; }
-  .bottom p {
+  .bottom > * {
     padding: 30px 48px; }
     @media only screen and (max-width: 768px) {
-      .bottom p {
+      .bottom > * {
         padding: 12px; } }
 
 .active,
@@ -723,10 +724,9 @@ body {
 
 .form-block {
   padding: 48px;
-  margin: 0px 64px;
+  margin: 0 auto 64px;
   background: #1f160a;
   border-radius: 36px;
-  margin: 0 auto;
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .form-block {
@@ -760,9 +760,11 @@ body {
   width: 100%;
   min-height: 700px;
   background: linear-gradient(180deg, rgba(31, 22, 10, 0) 0%, #1f160a 100%), url(../assets/images/magestic-author.jpg), #1f160a;
-  background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 1024px) {
+    .about .photo-block {
+      background-position: 50%; } }
 
 .about .heading {
   display: flex;
@@ -830,10 +832,46 @@ body {
     font-weight: 500;
     line-height: 170%; }
 
+.learning .title {
+  padding-bottom: 50px; }
+
 .learning .icon-wrapper {
   width: 120px;
   height: 120px;
   margin: 80px auto 24px; }
   .learning .icon-wrapper img {
+    width: 100%;
+    height: 100%; }
+
+.program .subtitle {
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #1f160a;
+  font-weight: 700;
+  line-height: 170%;
+  text-align: center; }
+
+.program .list__item {
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #1f160a;
+  font-weight: 500;
+  line-height: 170%; }
+
+.program .list__counter {
+  padding-right: 5px;
+  font-weight: 700; }
+
+.program .editional__content {
+  padding-left: 10px;
+  font-weight: 500; }
+
+.program .icon-wrapper {
+  width: 64px;
+  height: 12px;
+  margin: 80px auto 24px; }
+  .program .icon-wrapper img {
     width: 100%;
     height: 100%; }

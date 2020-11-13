@@ -69,12 +69,12 @@
     line-height: 150%;
   }
 }
+
 .form-block {
   padding: 48px;
-  margin: 0px 64px;
+  margin: 0 auto 64px;
   background: $color-dark;
   border-radius: 36px;
-  margin: 0 auto;
   text-align: center;
 
   @include mobile {

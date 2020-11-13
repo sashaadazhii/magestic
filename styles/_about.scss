@@ -11,9 +11,12 @@
     min-height: 700px;
     background: linear-gradient(180deg, rgba(31, 22, 10, 0) 0%, #1f160a 100%),
       url(../assets/images/magestic-author.jpg), #1f160a;
-    background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include tablet {
+      background-position: 50%;
+    }
   }
 
   .heading {
