@@ -9,11 +9,7 @@
     text-align: center;
   }
   .list {
-    &__item {
-      padding: 5px 0;
-      @include font($font-primary, 20px, $color-dark, 500);
-      line-height: 170%;
-    }
+    font-weight: 500;
 
     &__counter {
       padding-right: 5px;

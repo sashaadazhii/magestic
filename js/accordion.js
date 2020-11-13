@@ -7,8 +7,10 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling
     if (panel.style.height) {
       panel.style.height = null
+      panel.style.padding = null
     } else {
-      panel.style.height = panel.scrollHeight + 'px'
+      panel.style.height = panel.scrollHeight + 68 + 'px'
+      panel.style.padding = 34 + 'px' + ' ' + 48 + 'px'
     }
   })
 }

@@ -30,17 +30,16 @@
   transition: all 0.4s ease-in-out;
 
   & > * {
-    padding: 30px 48px;
+    padding-bottom: 30px;
 
     @include mobile {
-      padding: 12px;
+      padding-bottom: 12px;
     }
   }
 }
 
 .active,
 .top:hover,
-.active,
 .top:active {
   background-color: $color-active;
   color: $color-accent;

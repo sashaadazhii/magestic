@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'mixin';
+
+.lessons {
+  .subtitle {
+    margin-bottom: 40px;
+    @include font($font-primary, 24px, $color-dark, 700);
+    line-height: 170%;
+    text-align: center;
+  }
+
+  .list {
+    &__item {
+      padding: 5px 0;
+      @include font($font-primary, 20px, $color-dark, 500);
+      line-height: 170%;
+    }
+
+    &__counter {
+      padding-right: 5px;
+      font-weight: 700;
+    }
+  }
+
+  .editional {
+    &__content {
+      padding-left: 10px;
+      font-weight: 500;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 80px;
+  }
+
+  .btn {
+    position: relative;
+    min-width: 525px;
+    padding: 36px 40px;
+    @include font($font-primary, 24px, $color-light, 700);
+    text-align: center;
+    border-radius: 36px;
+    background-color: $color-dark;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    z-index: 3;
+
+    &:hover,
+    &:active {
+      background-color: $color-active;
+      color: $color-accent;
+    }
+  }
+
+  .left {
+    background: url(../assets/icons/btn-outside-dark.svg) 50% no-repeat;
+    width: 142px;
+    height: 50px;
+    z-index: 2;
+    transform: translateX(40px);
+  }
+
+  .right {
+    background: url(../assets/icons/btn-outside-dark.svg) 50% no-repeat;
+    width: 142px;
+    height: 50px;
+    z-index: 2;
+    transform: scaleX(-1) translateX(40px);
+  }
+}

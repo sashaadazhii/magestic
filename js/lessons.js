@@ -1,13 +1,12 @@
-let ulProgram = document.getElementById('list-program')
+let ulLessons = document.getElementById('list-lessons')
 
-program.forEach((item) => {
+lessons.forEach((item) => {
   let li = document.createElement('li')
   const list = item.list
   const homework = item.homework
   const bonus = item.bonus
   const practice = item.practice
 
-  /*list */
   function listProgram() {
     let b
     for (let i = 0; i < list.length; i++) {
@@ -77,5 +76,5 @@ program.forEach((item) => {
       ${aditional(bonus)}
     </div>
   `
-  ulProgram.appendChild(li)
+  ulLessons.appendChild(li)
 })
