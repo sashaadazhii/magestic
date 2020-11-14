@@ -1,12 +1,8 @@
-@import 'variables';
-@import 'mixin';
-
 .lessons {
-  .subtitle {
-    margin-bottom: 40px;
-    @include font($font-primary, 24px, $color-dark, 700);
-    line-height: 170%;
-    text-align: center;
+  .icon-wrapper {
+    margin: 36px auto;
+    width: 64px;
+    height: 12px;
   }
 
   .list {
@@ -22,13 +18,6 @@
     }
   }
 
-  .editional {
-    &__content {
-      padding-left: 10px;
-      font-weight: 500;
-    }
-  }
-
   .btn-wrapper {
     display: flex;
     justify-content: center;
@@ -37,16 +26,8 @@
   }
 
   .btn {
-    position: relative;
-    min-width: 525px;
-    padding: 36px 40px;
-    @include font($font-primary, 24px, $color-light, 700);
-    text-align: center;
-    border-radius: 36px;
+    color: $color-accent;
     background-color: $color-dark;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    z-index: 3;
 
     &:hover,
     &:active {

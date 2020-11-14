@@ -13,7 +13,7 @@
   transition: all 0.4s ease-in-out;
 
   @include mobile {
-    padding: 12px;
+    padding: 20px;
   }
 }
 
@@ -23,18 +23,24 @@
   margin-top: 20px;
   border-radius: 24px;
   background-color: $color-accent;
-  @include font($font-primary, 20px !important, $color-dark, 700);
+  @include font($font-primary, 20px !important, $color-dark, 500);
   line-height: 170%;
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out;
 
-  & > * {
+  & > *,
+  & > ul {
     padding-bottom: 30px;
 
     @include mobile {
-      padding-bottom: 12px;
+      padding-bottom: 20px;
     }
+  }
+
+  & > *:only-child,
+  & > ul:only-child {
+    padding-bottom: 0;
   }
 }
 
@@ -48,4 +54,20 @@
 .open {
   font-size: 40px;
   padding-left: 36px;
+}
+
+.editional {
+  &__title {
+    font-weight: 700;
+  }
+  &__content {
+    padding-left: 10px;
+    font-weight: 500;
+  }
+}
+
+.homework {
+  &__title {
+    font-weight: 700;
+  }
 }

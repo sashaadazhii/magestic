@@ -1,0 +1,259 @@
+.price {
+  .light {
+    padding-bottom: 390px;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .icon-wrapper {
+    width: 118px;
+    height: 120px;
+    margin: 80px auto 36px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+
+    &__item {
+      width: 380px;
+      max-width: 100%;
+      height: 306px;
+      margin: 33px 33px 0;
+      text-align: center;
+
+      @include mobile {
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &__item:first-child {
+      margin-left: 0;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+
+    &__item:nth-child(2) {
+      width: 446px;
+      padding: 0 33px;
+      margin: 0;
+      border-right: 1px solid rgba(170, 126, 82, 0.16);
+      border-left: 1px solid rgba(170, 126, 82, 0.16);
+
+      @include mobile {
+        padding: 0;
+        border-right: none;
+        border-left: none;
+      }
+    }
+
+    &__num {
+      @include font($font-accent, 48px, $color-dark, normal);
+    }
+
+    &__info {
+      @include font($font-primary, 24px, $color-dark, 600);
+      line-height: 170%;
+    }
+  }
+
+  .content {
+    padding: 6px 36px;
+    @include font($font-primary, 24px, $color-accent, 600);
+    line-height: 170%;
+    text-align: center;
+
+    @include mobile {
+      padding: 6px;
+    }
+
+    &--border {
+      padding: 24px 30px;
+      background-color: $color-dark;
+      border-radius: 16px;
+    }
+
+    &__accent {
+      color: $color-light;
+      font-weight: 700;
+    }
+
+    &__link {
+      position: relative;
+      padding: 48px 5px 10px;
+      color: inherit;
+      border-bottom: 2px solid $color-light;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:active {
+        color: $color-accent;
+      }
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .divider {
+    margin-top: 34px;
+  }
+
+  .price-block {
+    padding: 18px 128px;
+    margin: 64px 0;
+    margin-top: -390px;
+    background: $color-dark;
+    box-shadow: 0px 10px 24px rgba(246, 195, 125, 0.2);
+    border-radius: 36px;
+
+    @include tablet {
+      padding: 18px 24px;
+    }
+
+    @include tablet {
+      padding: 18px 10px;
+    }
+    .icon-wrapper {
+      margin-top: 60px;
+    }
+
+    &__title {
+      padding: 20px 60px;
+
+      @include mobile {
+        padding: 20px;
+        font-size: 30px;
+      }
+
+      @include font($font-primary, 36px, $color-accent, 500);
+      line-height: 150%;
+      text-align: center;
+    }
+
+    &__title-border {
+      padding: 36px 64px;
+      margin: 20px auto;
+      @include font($font-primary, 48px, $color-light, 700);
+      border: 2px dashed $color-light;
+      filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
+      border-radius: 36px;
+
+      @include tablet {
+        padding: 24px;
+      }
+      @include mobile {
+        padding: 24px 10px;
+      }
+    }
+
+    &__accent {
+      font-weight: 700;
+    }
+
+    &__shadow {
+      position: relative;
+      opacity: 0.5;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 125px;
+        height: 1px;
+        background-color: $color-light;
+      }
+    }
+  }
+
+  .list-info {
+    margin-bottom: 60px;
+
+    &__item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 24px;
+      @include font($font-primary, 24px, $color-accent, 600);
+      line-height: 170%;
+      text-align: left;
+
+      &::before {
+        content: '●';
+        position: absolute;
+        left: 0;
+        font-size: 15px;
+        color: $color-light;
+      }
+    }
+
+    &__accent {
+      color: $color-light;
+    }
+  }
+}
+.video-wrapper {
+  height: 0;
+  position: relative;
+  width: 980px;
+  max-width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  margin: 48px auto 0;
+  border-radius: 36px;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+  }
+}
+
+.subtitle {
+  width: 950px;
+  max-width: 100%;
+  margin: 36px auto;
+  @include font($font-primary, 36px, $color-accent, 500);
+
+  @include tablet {
+    width: auto;
+    font-size: 30px;
+  }
+
+  &__bold {
+    color: $color-light;
+    font-weight: 700;
+  }
+
+  &--shadow {
+    @include font($font-primary, 24px, $color-active, 700);
+  }
+}
+
+.dark {
+  .icon-wrapper {
+    margin: 30px auto 36px;
+  }
+
+  @include mobile {
+    .subtitle {
+      font-size: 25px;
+      line-height: inherit;
+    }
+  }
+}

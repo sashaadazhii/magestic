@@ -1,13 +1,4 @@
-@import 'variables';
-@import 'mixin';
-
 .program {
-  .subtitle {
-    margin-bottom: 40px;
-    @include font($font-primary, 24px, $color-dark, 700);
-    line-height: 170%;
-    text-align: center;
-  }
   .list {
     font-weight: 500;
 

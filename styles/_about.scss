@@ -1,6 +1,3 @@
-@import 'variables';
-@import 'mixin';
-
 .about {
   .container {
     margin-top: -280px;
@@ -31,6 +28,7 @@
   }
 
   .subtitle {
+    width: auto;
     @include font($font-primary, 36px, $color-accent, 500);
     line-height: 170%;
   }

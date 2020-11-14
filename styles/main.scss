@@ -4,6 +4,7 @@
 body {
   background-color: $color-dark;
 }
+
 .container {
   width: 1320px;
   max-width: 100%;
@@ -36,6 +37,13 @@ body {
   @include mobile {
     font-size: 36px;
   }
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  @include font($font-primary, 24px, $color-dark, 700);
+  line-height: 170%;
+  text-align: center;
 }
 
 .dark {

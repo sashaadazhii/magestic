@@ -40,18 +40,19 @@ program.forEach((item) => {
   }
 
   let ad = document.createElement('div')
-  ad.setAttribute('class', 'aditional')
 
   function aditional(param) {
     if (param.title != '') {
       ad.innerHTML = `
+      <div class="editional">
         <span class="editional__title">
           ${param.title}
         </span>
-
-      <span class="editional__content">
-        ${param.content}
-      </span>
+    
+        <span class="editional__content">
+          ${param.content}
+        </span>
+      </div>
       `
     }
     return ad.innerHTML
