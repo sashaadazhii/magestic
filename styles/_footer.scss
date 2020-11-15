@@ -1,0 +1,123 @@
+.footer-block {
+  padding: 18px 36px;
+  margin: 64px 0;
+  background: $color-dark;
+  box-shadow: 0px 10px 24px rgba(246, 195, 125, 0.2);
+  border-radius: 36px;
+
+  @include tablet {
+    padding: 18px 24px;
+  }
+
+  @include tablet {
+    padding: 18px 10px;
+  }
+
+  &__title {
+    padding: 20px 60px;
+
+    @include mobile {
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    @include font($font-primary, 36px, $color-accent, 500);
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &__border {
+    padding: 36px 64px;
+    margin: 20px auto;
+    @include font($font-primary, 48px, $color-light, 700);
+    border: 2px solid $color-light;
+    border-radius: 16px;
+    filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
+
+    @include tablet {
+      padding: 24px;
+    }
+    @include mobile {
+      padding: 24px 10px;
+    }
+  }
+
+  &__accent {
+    font-weight: 700;
+  }
+
+  .content {
+    padding: 6px 36px;
+    @include font($font-primary, 24px, $color-accent, 600);
+    line-height: 170%;
+    text-align: center;
+
+    @include mobile {
+      padding: 6px;
+    }
+
+    &__accent {
+      color: $color-light;
+      font-weight: 700;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      .social-icon {
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 1px;
+        height: 24px;
+        background-color: $color-active;
+
+        @include tablet {
+          width: 0;
+        }
+      }
+
+      .social-icon:nth-child(2) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item > * {
+    @include font($font-primary, 24px, $color-accent, 400);
+  }
+
+  &__title {
+    padding-right: 5px;
+    font-weight: 600;
+  }
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 24px;
+
+  &__img {
+    width: 100%;
+  }
+}

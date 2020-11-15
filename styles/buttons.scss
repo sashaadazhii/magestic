@@ -38,6 +38,10 @@
   height: 50px;
   z-index: 2;
   transform: translateX(40px);
+
+  &--wide {
+    transform: translateX(0);
+  }
 }
 
 .right {
@@ -46,6 +50,9 @@
   height: 50px;
   z-index: 2;
   transform: scaleX(-1) translateX(40px);
+  &--wide {
+    transform: scaleX(-1) translateX(0);
+  }
 }
 
 @media only screen and (max-width: 600px) {

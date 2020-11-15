@@ -36,7 +36,7 @@ form.addEventListener('submit', (event) => {
 
   number = numbers.find((num) => num.num === rez)
   numDom.textContent = number.num //number
-  titleDom.textContent = number.title //title
+  titleDom.textContent = ' (' + number.title + ')' //title
 
   numDom = output.append(numDom)
   titleDom = output.append(titleDom)
