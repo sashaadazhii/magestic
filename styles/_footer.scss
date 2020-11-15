@@ -1,8 +1,7 @@
 .footer-block {
   padding: 18px 36px;
   margin: 64px 0;
-  background: $color-dark;
-  box-shadow: 0px 10px 24px rgba(246, 195, 125, 0.2);
+  background-color: rgba(254, 249, 220, 0.03);
   border-radius: 36px;
 
   @include tablet {
@@ -119,5 +118,62 @@
 
   &__img {
     width: 100%;
+  }
+}
+
+.footer {
+  background-color: rgba(254, 249, 220, 0.03);
+
+  .social-wrapper {
+    display: flex;
+    transform: translateY(-50%);
+  }
+
+  .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px;
+    margin: 0 auto;
+    border-radius: 36px;
+    background-color: $color-light;
+
+    @include mobile {
+      padding: 10px;
+      justify-content: space-between;
+    }
+
+    .social-icon {
+      margin: 0;
+    }
+
+    &__item {
+      padding: 0 27px;
+
+      @include mobile {
+        padding: 13px;
+      }
+
+      &:hover > .social__icon,
+      &:active > .social__icon {
+        box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+          6px 6px 11px 6px rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  .rights {
+    text-align: center;
+    &__title {
+      padding-bottom: 16px;
+      @include font($font-primary, 24px, $color-light, 700);
+      line-height: 170%;
+    }
+
+    &__desc {
+      @include font($font-primary, 20px, $color-accent, 500);
+      line-height: 170%;
+    }
   }
 }
