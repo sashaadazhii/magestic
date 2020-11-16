@@ -31,6 +31,7 @@
     width: auto;
     @include font($font-primary, 36px, $color-accent, 500);
     line-height: 170%;
+    text-align: left;
   }
 
   .list {

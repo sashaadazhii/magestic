@@ -71,7 +71,10 @@
     }
 
     &--border {
+      width: 890px;
+      max-width: 100%;
       padding: 24px 30px;
+      margin: 0 auto;
       background-color: $color-dark;
       border-radius: 16px;
     }
