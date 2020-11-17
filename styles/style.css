@@ -194,9 +194,13 @@ body {
   .bottom > ul:only-child {
     padding-bottom: 0; }
 
+.bottom--inner {
+  padding: 34px 48px;
+  margin-bottom: 48px; }
+
 .active,
 .top:hover,
-.top:active {
+.top.active {
   background-color: #aa7e52;
   color: #fef9dc; }
 
@@ -964,6 +968,11 @@ body {
   .requirements .list-possibility .top,
   .requirements .list-possibility .bottom {
     background-color: #f6c37d; }
+  .requirements .list-possibility .active,
+  .requirements .list-possibility .top:hover,
+  .requirements .list-possibility .top.active {
+    background-color: #aa7e52;
+    color: #fef9dc; }
 
 .requirements .block {
   padding: 64px;

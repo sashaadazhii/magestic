@@ -44,9 +44,14 @@
   }
 }
 
+.bottom--inner {
+  padding: 34px 48px;
+  margin-bottom: 48px;
+}
+
 .active,
 .top:hover,
-.top:active {
+.top.active {
   background-color: $color-active;
   color: $color-accent;
 }

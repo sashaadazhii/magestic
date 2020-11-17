@@ -11,7 +11,7 @@ for (i = 0; i < acc.length; i++) {
     } else {
       // panel.style.height = panel.scrollHeight + 68 + 'px'
       panel.style.height = 'auto'
-      panel.style.padding = 34 + 'px' + ' ' + 48 + 'px'
+      // panel.style.padding = 34 + 'px' + ' ' + 48 + 'px'
     }
   })
 }

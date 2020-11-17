@@ -63,19 +63,21 @@ program.forEach((item) => {
       <div> ${item.title}</div> <span class="open">+</span>
     </div>
     <div class="bottom">
-      <ul class="list">
-        ${listProgram()}
-      </ul>
-        ${aditional(practice)}
-      <div class="homework">
-        <p class="homework__title">
-          ${item.homework.title}
-        </p>
+      <div class="bottom--inner">
         <ul class="list">
-          ${listHomework()}
+          ${listProgram()}
         </ul>
+          ${aditional(practice)}
+        <div class="homework">
+          <p class="homework__title">
+            ${item.homework.title}
+          </p>
+          <ul class="list">
+            ${listHomework()}
+          </ul>
+        </div>
+        ${aditional(bonus)}
       </div>
-      ${aditional(bonus)}
     </div>
   `
   ulProgram.appendChild(li)

@@ -30,10 +30,12 @@ possibilities.forEach(function (item) {
   </div>
  
     <div class="bottom">
-    <p> ${item.subtitle} </p>
+      <div class="bottom--inner">
+      <p> ${item.subtitle} </p>
       <ul class="list--accordion">
         ${listProgram()}
       </ul>
+      </div>
   </div>
   `
 

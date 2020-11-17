@@ -8,7 +8,9 @@ learning.forEach(function (item) {
   </div>
  
     <div class="bottom">
-    <p> ${item.result} </p>
+      <div class="bottom--inner">
+      <p> ${item.result} </p>
+      </div>
   </div>
   `
 

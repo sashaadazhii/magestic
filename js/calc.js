@@ -3,13 +3,15 @@ let totalValue = 0
 let rez = 0
 let number
 
-let numDom = document.getElementById('numDom')
+// let numDom = document.getElementById('numDom')
 let titleDom = document.getElementById('titleDom')
 let output = document.getElementsByClassName('output')[0]
 const form = document.getElementById('form')
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
+  let numDom = document.getElementById('numDom')
+
   let day = document.getElementById('day').value
   let month = document.getElementById('month').value
   let year = document.getElementById('year').value
@@ -35,9 +37,12 @@ form.addEventListener('submit', (event) => {
   }
 
   number = numbers.find((num) => num.num === rez)
+  console.log(numDom)
   numDom.textContent = number.num //number
   titleDom.textContent = ' (' + number.title + ')' //title
 
-  numDom = output.append(numDom)
-  titleDom = output.append(titleDom)
+  document.forms['form'].reset()
+
+  console.log(number)
+  console.log(rez)
 })
