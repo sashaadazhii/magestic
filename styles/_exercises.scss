@@ -16,6 +16,14 @@
     background-color: $color-accent;
     border-radius: 36px;
 
+    .icon-wrapper--small {
+      padding: 0 0 36px 0;
+
+      @include mobile {
+        padding-top: 36px;
+      }
+    }
+
     @include mobile {
       padding: 20px 12px;
     }
@@ -31,8 +39,10 @@
     &__title {
       @include font($font-primary, 36px, $color-dark, 700);
       line-height: 140%;
+
       @include mobile {
-        line-height: inherit;
+        font-size: 30px;
+        line-height: initial;
       }
     }
 

@@ -15,6 +15,11 @@
     line-height: 170%;
     text-align: center;
 
+    @include mobile {
+      padding: 24px 10px;
+      font-size: 20px;
+    }
+
     &--light {
       font-weight: 400;
 
@@ -85,6 +90,11 @@
     &__info {
       @include font($font-primary, 24px, $color-accent, 600);
       line-height: 170%;
+
+      @include mobile {
+        font-size: 20px;
+        font-weight: 500;
+      }
     }
 
     &--accordion {
@@ -137,6 +147,14 @@
 
     @include mobile {
       padding: 10px;
+    }
+
+    .icon-wrapper--small {
+      padding: 0 0 36px 0;
+
+      @include mobile {
+        padding-top: 36px;
+      }
     }
 
     .title {

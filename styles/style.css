@@ -27,7 +27,8 @@ body {
     color: #fef9dc; }
   @media only screen and (max-width: 768px) {
     .title {
-      font-size: 36px; } }
+      padding: 12px 0;
+      font-size: 30px; } }
 
 .subtitle {
   margin-bottom: 40px;
@@ -37,6 +38,10 @@ body {
   font-weight: 700;
   line-height: 170%;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .subtitle .subtitle {
+      font-size: 20px;
+      line-height: initial; } }
 
 .dark {
   width: 100%; }
@@ -52,6 +57,9 @@ body {
   width: 118px;
   height: 120px;
   margin: 80px auto 36px; }
+  @media only screen and (max-width: 768px) {
+    .icon-wrapper {
+      margin: 30px auto 30px; } }
   .icon-wrapper--small {
     width: 64px;
     height: 12px;
@@ -146,7 +154,8 @@ body {
 
 @font-face {
   font-family: 'Sunday';
-  src: url("./assets/fonts/Sunday/Sunday-Regular.otf") format("opentype");
+  src: url("../assets/fonts/Sunday/sunday.ttf") format("truetype"), url("./assets/fonts/Sunday/sunday.woff") format("woff"), url("./assets/fonts/Sunday/sunday.woff2") format("woff2"), url("./assets/fonts/Sunday/sunday.svg") format("svg"), url("./assets/fonts/Sunday/sunday.eot") format("eot"), url("./assets/fonts/Sunday/sunday.eot") format("embedded-opentype");
+  /* IE6-IE8 */
   font-weight: normal;
   font-style: normal; }
 
@@ -154,7 +163,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
   padding: 30px 48px;
   border-radius: 24px;
   background-color: #fef9dc;
@@ -173,7 +181,8 @@ body {
 .bottom {
   height: 0;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin: 12px 0;
   border-radius: 24px;
   background-color: #fef9dc;
   font-family: "Montserrat", sans-serif;
@@ -184,20 +193,20 @@ body {
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out; }
-  .bottom > *,
-  .bottom > ul {
-    padding-bottom: 30px; }
-    @media only screen and (max-width: 768px) {
-      .bottom > *,
-      .bottom > ul {
-        padding-bottom: 20px; } }
-  .bottom > *:only-child,
-  .bottom > ul:only-child {
-    padding-bottom: 0; }
 
 .bottom--inner {
   padding: 34px 48px;
   margin-bottom: 48px; }
+  .bottom--inner > *,
+  .bottom--inner > ul {
+    padding-bottom: 20px; }
+  .bottom--inner > *:only-child,
+  .bottom--inner > ul:only-child {
+    padding-bottom: 0; }
+  @media only screen and (max-width: 768px) {
+    .bottom--inner {
+      padding: 20px;
+      margin-bottom: 0; } }
 
 .active,
 .top:hover,
@@ -437,12 +446,17 @@ body {
       flex-direction: column;
       align-items: center;
       padding: 30px; } }
+  @media only screen and (max-width: 768px) {
+    .gifts .gift {
+      padding: 15px 10px 15px 15px; } }
   .gifts .gift__number {
     font-family: "Sunday";
     font-size: 84px;
     color: #fef9dc;
-    font-weight: normal;
-    line-height: 150%; }
+    font-weight: normal; }
+    @media only screen and (max-width: 768px) {
+      .gifts .gift__number {
+        font-size: 60px; } }
   .gifts .gift__num {
     width: 210px;
     height: 190px;
@@ -451,6 +465,10 @@ body {
     justify-content: center;
     background: url(../assets/images/moon-circle.png) 50% no-repeat;
     background-size: contain; }
+    @media only screen and (max-width: 768px) {
+      .gifts .gift__num {
+        width: 140px;
+        height: 155px; } }
   .gifts .gift__content {
     padding-left: 64px; }
     @media only screen and (max-width: 768px) {
@@ -473,14 +491,12 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     color: #aa7e52;
-    font-weight: 600;
-    line-height: 170%; }
+    font-weight: 600; }
   .gifts .gift__desc {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     color: #fef9dc;
-    font-weight: 600;
-    line-height: 170%; }
+    font-weight: 600; }
     @media only screen and (max-width: 768px) {
       .gifts .gift__desc {
         font-size: 20px; } }
@@ -575,6 +591,9 @@ body {
     font-size: 24px;
     color: #fef9dc;
     font-weight: 600; }
+    @media only screen and (max-width: 768px) {
+      .form .input::placeholder {
+        font-size: 18px; } }
   .form .input--btn {
     background-color: #f6c37d;
     color: #1f160a; }
@@ -596,6 +615,11 @@ body {
   margin-bottom: 45px;
   background-color: #fef9dc;
   border-radius: 36px; }
+  .exercises .example-block .icon-wrapper--small {
+    padding: 0 0 36px 0; }
+    @media only screen and (max-width: 768px) {
+      .exercises .example-block .icon-wrapper--small {
+        padding-top: 36px; } }
   @media only screen and (max-width: 768px) {
     .exercises .example-block {
       padding: 20px 12px; } }
@@ -612,7 +636,8 @@ body {
     line-height: 140%; }
     @media only screen and (max-width: 768px) {
       .exercises .example__title {
-        line-height: inherit; } }
+        font-size: 30px;
+        line-height: initial; } }
   .exercises .example__desc {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
@@ -719,8 +744,6 @@ body {
     @media only screen and (max-width: 768px) {
       .form-block .content {
         font-size: 14px; } }
-  .form-block .form--dark .input {
-    color: #fef9dc; }
 
 .about .container {
   margin-top: -280px; }
@@ -751,6 +774,10 @@ body {
   font-weight: 500;
   line-height: 170%;
   text-align: left; }
+  @media only screen and (max-width: 768px) {
+    .about .subtitle {
+      font-size: 24px;
+      line-height: initial; } }
 
 .about .list__item {
   padding-top: 36px;
@@ -762,6 +789,7 @@ body {
   @media only screen and (max-width: 768px) {
     .about .list__item {
       padding: 24px 5px 0 10px;
+      font-size: 16px;
       line-height: inherit; } }
 
 .about .list__emp {
@@ -892,6 +920,10 @@ body {
   font-weight: 600;
   line-height: 170%;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .requirements .content {
+      padding: 24px 10px;
+      font-size: 20px; } }
   .requirements .content--light {
     font-weight: 400; }
     .requirements .content--light .content__accent {
@@ -947,6 +979,10 @@ body {
     color: #fef9dc;
     font-weight: 600;
     line-height: 170%; }
+    @media only screen and (max-width: 768px) {
+      .requirements .list__info {
+        font-size: 20px;
+        font-weight: 500; } }
   .requirements .list--accordion {
     display: block;
     padding-bottom: 0; }
@@ -990,6 +1026,11 @@ body {
   @media only screen and (max-width: 768px) {
     .requirements .block {
       padding: 10px; } }
+  .requirements .block .icon-wrapper--small {
+    padding: 0 0 36px 0; }
+    @media only screen and (max-width: 768px) {
+      .requirements .block .icon-wrapper--small {
+        padding-top: 36px; } }
   .requirements .block .title {
     padding: 36px; }
     @media only screen and (max-width: 768px) {
@@ -1072,6 +1113,10 @@ body {
     color: #1f160a;
     font-weight: 600;
     line-height: 170%; }
+    @media only screen and (max-width: 768px) {
+      .price .list__info {
+        font-size: 20px;
+        font-weight: 500; } }
 
 .price .content {
   padding: 6px 36px;
@@ -1135,7 +1180,7 @@ body {
     @media only screen and (max-width: 768px) {
       .price .price-block__title {
         padding: 20px;
-        font-size: 30px; } }
+        font-size: 24px; } }
   .price .price-block__title-border {
     padding: 36px 64px;
     margin: 20px auto;
@@ -1177,6 +1222,9 @@ body {
     font-weight: 600;
     line-height: 170%;
     text-align: left; }
+    @media only screen and (max-width: 768px) {
+      .price .list-info__item {
+        font-size: 20px; } }
     .price .list-info__item::before {
       content: '●';
       position: absolute;
@@ -1203,7 +1251,10 @@ body {
     height: 100%;
     border-radius: 36px; }
 
-.subtitle {
+.dark .icon-wrapper {
+  margin: 30px auto 36px; }
+
+.dark .subtitle {
   width: 950px;
   max-width: 100%;
   margin: 36px auto;
@@ -1212,25 +1263,19 @@ body {
   color: #fef9dc;
   font-weight: 500; }
   @media only screen and (max-width: 1024px) {
-    .subtitle {
+    .dark .subtitle {
       width: auto;
-      font-size: 30px; } }
-  .subtitle__bold {
+      padding: 0 20px;
+      font-size: 24px;
+      line-height: inherit; } }
+  .dark .subtitle__bold {
     color: #f6c37d;
     font-weight: 700; }
-  .subtitle--shadow {
+  .dark .subtitle--shadow {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     color: #aa7e52;
     font-weight: 700; }
-
-.dark .icon-wrapper {
-  margin: 30px auto 36px; }
-
-@media only screen and (max-width: 768px) {
-  .dark .subtitle {
-    font-size: 25px;
-    line-height: inherit; } }
 
 .footer-block {
   padding: 18px 36px;
@@ -1294,7 +1339,6 @@ body {
   justify-content: center; }
   .contacts__item {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center; }
     .contacts__item:first-child .social-icon {
@@ -1419,6 +1463,10 @@ body {
     color: #fef9dc;
     font-weight: 700;
     line-height: 140%; }
+    @media only screen and (max-width: 768px) {
+      .visible-wrapper .slider__title {
+        font-size: 30px;
+        text-align: center; } }
   .visible-wrapper .slider__city {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;

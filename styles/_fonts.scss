@@ -27,15 +27,12 @@
 }
 @font-face {
   font-family: 'Sunday';
-  src:
-  //  url('../assets/fonts/Sunday/sunday.ttf') format('truetype'),
-    // url('./assets/fonts/Sunday/sunday.woff') format('woff'),
-    // url('./assets/fonts/Sunday/sunday.woff2') format('woff2'),
-    // url('./assets/fonts/Sunday/sunday.svg') format('svg'),
-    // url('./assets/fonts/Sunday/sunday.eot') format('eot'),
-    // url('./assets/fonts/Sunday/sunday.eot') format('embedded-opentype'); /* IE6-IE8 */
-    url('./assets/fonts/Sunday/Sunday-Regular.otf') format('opentype');
-
+  src: url('../assets/fonts/Sunday/sunday.ttf') format('truetype'),
+    url('./assets/fonts/Sunday/sunday.woff') format('woff'),
+    url('./assets/fonts/Sunday/sunday.woff2') format('woff2'),
+    url('./assets/fonts/Sunday/sunday.svg') format('svg'),
+    url('./assets/fonts/Sunday/sunday.eot') format('eot'),
+    url('./assets/fonts/Sunday/sunday.eot') format('embedded-opentype'); /* IE6-IE8 */
   font-weight: normal;
   font-style: normal;
 }

@@ -35,7 +35,8 @@ body {
   }
 
   @include mobile {
-    font-size: 36px;
+    padding: 12px 0;
+    font-size: 30px;
   }
 }
 
@@ -44,8 +45,14 @@ body {
   @include font($font-primary, 24px, $color-dark, 700);
   line-height: 170%;
   text-align: center;
-}
 
+  @include mobile {
+    .subtitle {
+      font-size: 20px;
+      line-height: initial;
+    }
+  }
+}
 .dark {
   width: 100%;
   // background-color: $color-dark;
@@ -64,6 +71,10 @@ body {
   width: 118px;
   height: 120px;
   margin: 80px auto 36px;
+
+  @include mobile {
+    margin: 30px auto 30px;
+  }
 
   &--small {
     width: 64px;

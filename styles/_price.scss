@@ -57,6 +57,11 @@
     &__info {
       @include font($font-primary, 24px, $color-dark, 600);
       line-height: 170%;
+
+      @include mobile {
+        font-size: 20px;
+        font-weight: 500;
+      }
     }
   }
 
@@ -130,7 +135,7 @@
 
       @include mobile {
         padding: 20px;
-        font-size: 30px;
+        font-size: 24px;
       }
 
       @include font($font-primary, 36px, $color-accent, 500);
@@ -184,6 +189,10 @@
       line-height: 170%;
       text-align: left;
 
+      @include mobile {
+        font-size: 20px;
+      }
+
       &::before {
         content: '●';
         position: absolute;
@@ -217,36 +226,31 @@
   }
 }
 
-.subtitle {
-  width: 950px;
-  max-width: 100%;
-  margin: 36px auto;
-  @include font($font-primary, 36px, $color-accent, 500);
-
-  @include tablet {
-    width: auto;
-    font-size: 30px;
-  }
-
-  &__bold {
-    color: $color-light;
-    font-weight: 700;
-  }
-
-  &--shadow {
-    @include font($font-primary, 24px, $color-active, 700);
-  }
-}
-
 .dark {
   .icon-wrapper {
     margin: 30px auto 36px;
   }
 
-  @include mobile {
-    .subtitle {
-      font-size: 25px;
+  .subtitle {
+    width: 950px;
+    max-width: 100%;
+    margin: 36px auto;
+    @include font($font-primary, 36px, $color-accent, 500);
+
+    @include tablet {
+      width: auto;
+      padding: 0 20px;
+      font-size: 24px;
       line-height: inherit;
+    }
+
+    &__bold {
+      color: $color-light;
+      font-weight: 700;
+    }
+
+    &--shadow {
+      @include font($font-primary, 24px, $color-active, 700);
     }
   }
 }

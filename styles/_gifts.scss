@@ -1,7 +1,6 @@
 .gifts {
   .gift {
     display: flex;
-    // flex-flow: row wrap;
     align-items: flex-start;
     padding: 64px 78px;
     margin: 48px 0;
@@ -14,9 +13,15 @@
       padding: 30px;
     }
 
+    @include mobile {
+      padding: 15px 10px 15px 15px;
+    }
+
     &__number {
       @include font($font-accent, 84px, $color-accent, normal);
-      line-height: 150%;
+      @include mobile {
+        font-size: 60px;
+      }
     }
 
     &__num {
@@ -27,6 +32,11 @@
       justify-content: center;
       background: url(../assets/images/moon-circle.png) 50% no-repeat;
       background-size: contain;
+
+      @include mobile {
+        width: 140px;
+        height: 155px;
+      }
     }
 
     &__content {
@@ -54,12 +64,10 @@
 
     &__subtitle {
       @include font($font-primary, 24px, $color-active, 600);
-      line-height: 170%;
     }
 
     &__desc {
       @include font($font-primary, 24px, $color-accent, 600);
-      line-height: 170%;
 
       @include mobile {
         font-size: 20px;
