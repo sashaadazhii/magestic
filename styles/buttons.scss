@@ -55,13 +55,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .btn {
-    padding: 12px;
-    border-radius: 24px;
-    font-size: 18px;
-  }
-
+@include mobile {
   .left {
     width: 0;
     height: 0;
@@ -70,5 +64,13 @@
   .right {
     width: 0;
     height: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 12px;
+    border-radius: 24px;
+    font-size: 18px;
   }
 }

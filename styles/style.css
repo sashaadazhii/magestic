@@ -106,17 +106,19 @@ body {
   .right--wide {
     transform: scaleX(-1) translateX(0); }
 
-@media only screen and (max-width: 600px) {
-  .btn {
-    padding: 12px;
-    border-radius: 24px;
-    font-size: 18px; }
+@media only screen and (max-width: 768px) {
   .left {
     width: 0;
     height: 0; }
   .right {
     width: 0;
     height: 0; } }
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 12px;
+    border-radius: 24px;
+    font-size: 18px; } }
 
 @font-face {
   font-family: 'Montserrat';
@@ -144,8 +146,7 @@ body {
 
 @font-face {
   font-family: 'Sunday';
-  src: url("../assets/fonts/Sunday/sunday.ttf") format("truetype"), url("./assets/fonts/Sunday/sunday.woff") format("woff"), url("./assets/fonts/Sunday/sunday.woff2") format("woff2"), url("./assets/fonts/Sunday/sunday.svg") format("svg"), url("./assets/fonts/Sunday/sunday.eot") format("eot"), url("./assets/fonts/Sunday/sunday.eot") format("embedded-opentype");
-  /* IE6-IE8 */
+  src: url("./assets/fonts/Sunday/Sunday-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 
@@ -718,9 +719,8 @@ body {
     @media only screen and (max-width: 768px) {
       .form-block .content {
         font-size: 14px; } }
-
-.form--dark .input {
-  color: #fef9dc; }
+  .form-block .form--dark .input {
+    color: #fef9dc; }
 
 .about .container {
   margin-top: -280px; }
@@ -863,6 +863,14 @@ body {
   height: 50px;
   z-index: 2;
   transform: scaleX(-1) translateX(40px); }
+
+@media only screen and (max-width: 768px) {
+  .lessons .left {
+    width: 0;
+    height: 0; }
+  .lessons .right {
+    width: 0;
+    height: 0; } }
 
 .requirements .subtitle {
   padding-bottom: 48px;
