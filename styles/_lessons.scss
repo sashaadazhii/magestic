@@ -6,7 +6,7 @@
   .list {
     &__item {
       padding: 5px 0;
-      @include font($font-primary, 20px, $color-dark, 500);
+      @include font($font-primary, 1.25rem, $color-dark, 500);
       line-height: 170%;
     }
 

@@ -81,7 +81,7 @@
     }
 
     &__title {
-      @include font($font-primary, 18px, $color-dark, 700);
+      @include font($font-primary, 1rem, $color-dark, 700);
       line-height: 170%;
     }
 

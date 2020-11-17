@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+  font-size: 16px; }
+
 body {
   background-color: #1f160a; }
 
@@ -16,8 +19,8 @@ body {
 
 .title {
   padding: 12px;
-  font-family: "Sunday";
-  font-size: 48px;
+  font-family: "FoglihtenNo06";
+  font-size: 3rem;
   color: #1f160a;
   font-weight: normal;
   text-align: center; }
@@ -28,19 +31,19 @@ body {
   @media only screen and (max-width: 768px) {
     .title {
       padding: 12px 0;
-      font-size: 30px; } }
+      font-size: 1.875rem; } }
 
 .subtitle {
   margin-bottom: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1rem;
   color: #1f160a;
   font-weight: 700;
   line-height: 170%;
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .subtitle .subtitle {
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: initial; } }
 
 .dark {
@@ -49,9 +52,6 @@ body {
 .light {
   width: 100%;
   background-color: #f6c37d; }
-
-.requirements .vsa-item__trigger {
-  background-color: #f6c37d !important; }
 
 .icon-wrapper {
   width: 118px;
@@ -79,8 +79,8 @@ body {
   position: relative;
   min-width: 525px;
   padding: 36px 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1.25rem;
   color: #1f160a;
   font-weight: 700;
   text-align: center;
@@ -126,37 +126,48 @@ body {
   .btn {
     padding: 12px;
     border-radius: 24px;
-    font-size: 18px; } }
+    font-size: 1.125rem; } }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
+  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Sunday';
-  src: url("../assets/fonts/Sunday/sunday.ttf") format("truetype"), url("./assets/fonts/Sunday/sunday.woff") format("woff"), url("./assets/fonts/Sunday/sunday.woff2") format("woff2"), url("./assets/fonts/Sunday/sunday.svg") format("svg"), url("./assets/fonts/Sunday/sunday.eot") format("eot"), url("./assets/fonts/Sunday/sunday.eot") format("embedded-opentype");
-  /* IE6-IE8 */
+  font-family: 'FoglihtenNo06';
+  src: url("../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf");
+  src: local("../assets/fonts/FoglihtenNo06/FoglihtenNo06"), local("FoglihtenNo06"), url("../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf") format("opentype");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("AvenirNextCyr-Demi.eot");
+  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Demi.woff") format("woff"), url("AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal; }
 
 .top {
@@ -166,8 +177,8 @@ body {
   padding: 30px 48px;
   border-radius: 24px;
   background-color: #fef9dc;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px !important;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1.25rem;
   color: #1f160a;
   font-weight: 500;
   line-height: 170%;
@@ -185,8 +196,8 @@ body {
   margin: 12px 0;
   border-radius: 24px;
   background-color: #fef9dc;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px !important;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1.25rem;
   color: #1f160a;
   font-weight: 500;
   line-height: 170%;
@@ -217,7 +228,7 @@ body {
   color: #fef9dc; }
 
 .open {
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-left: 36px; }
 
 .editional__title {
@@ -247,7 +258,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%; }
-    .header .container > * {
+    .header .container > *:not(:nth-child(2)) {
       margin-bottom: 36px; }
     @media only screen and (max-width: 768px) {
       .header .container {
@@ -258,8 +269,8 @@ body {
     height: 175px; }
   .header .content {
     padding: 24px 36px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
     line-height: 29px;
@@ -273,7 +284,7 @@ body {
     @media only screen and (max-width: 768px) {
       .header .content {
         padding: 12px;
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
 
 /*advantages*/
 .advantages {
@@ -294,13 +305,13 @@ body {
   .advantages__img {
     margin: 0 auto; }
   .advantages__num {
-    font-family: "Sunday";
-    font-size: 48px;
+    font-family: "FoglihtenNo06";
+    font-size: 3rem;
     color: #fef9dc;
     font-weight: normal; }
   .advantages__text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #f6c37d;
     font-weight: 600; }
 
@@ -358,10 +369,10 @@ body {
   .info .block__content {
     padding: 24px 36px;
     margin-top: 64px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "FoglihtenNo06";
+    font-size: 2.25rem;
     color: #fef9dc;
-    font-weight: 600;
+    font-weight: normal;
     line-height: 140%;
     border: 2px solid #f6c37d;
     filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
@@ -371,14 +382,17 @@ body {
         padding: 12px 24px;
         font-size: 24px; } }
   .info .block__accent {
-    color: #f6c37d; }
+    color: #f6c37d;
+    font-weight: 600; }
+  .info .block__accent--light {
+    color: #fef9dc; }
   .info .block__text {
     padding: 30px 45px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 400;
-    line-height: 140%; }
+    line-height: 150%; }
     @media only screen and (max-width: 1024px) {
       .info .block__text {
         padding: 15px 25px;
@@ -421,17 +435,17 @@ body {
     .info .block--small {
       background-position: bottom; } }
   .info .block--small__content {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "FoglihtenNo06";
+    font-size: 2.25rem;
     color: #fef9dc;
-    font-weight: 400; }
+    font-weight: normal; }
     @media only screen and (max-width: 768px) {
       .info .block--small__content {
         font-size: 24px; } }
     @media only screen and (max-width: 430px) {
       .info .block--small__content {
         padding-top: 110px;
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
   .info .block--small__accent {
     color: #f6c37d;
     font-weight: 600; }
@@ -452,13 +466,13 @@ body {
     .gifts .gift {
       padding: 15px 10px 15px 15px; } }
   .gifts .gift__number {
-    font-family: "Sunday";
-    font-size: 84px;
+    font-family: "FoglihtenNo06";
+    font-size: 5.25rem;
     color: #fef9dc;
     font-weight: normal; }
     @media only screen and (max-width: 768px) {
       .gifts .gift__number {
-        font-size: 60px; } }
+        font-size: 3.75rem; } }
   .gifts .gift__num {
     width: 210px;
     height: 190px;
@@ -476,42 +490,42 @@ body {
     @media only screen and (max-width: 768px) {
       .gifts .gift__content {
         padding-left: 0;
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
     .gifts .gift__content > * {
       padding-bottom: 16px; }
   .gifts .gift__title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "FoglihtenNo06";
+    font-size: 2.25rem;
     color: #f6c37d;
-    font-weight: 600;
-    line-height: 140%; }
+    font-weight: normal;
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .gifts .gift__title {
         font-size: 24px;
         text-align: center; } }
   .gifts .gift__subtitle {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #aa7e52;
     font-weight: 600; }
   .gifts .gift__desc {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600; }
     @media only screen and (max-width: 768px) {
       .gifts .gift__desc {
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
     .gifts .gift__desc p {
       font-weight: 400; }
 
 .gifts .list__item {
   width: 75%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1rem;
   color: #f6c37d;
   font-weight: 600;
-  line-height: 170%; }
+  line-height: 150%; }
   @media only screen and (max-width: 768px) {
     .gifts .list__item {
       width: 100%;
@@ -527,11 +541,11 @@ body {
   padding-left: 25px; }
   .gifts .list--ul__item {
     position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 400;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .gifts .list--ul__item {
         font-size: 20px; } }
@@ -551,8 +565,8 @@ body {
       padding: 15px; } }
   .form-wrapper .form-content {
     padding: 24px 0 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1.25rem;
     color: #fef9dc;
     font-weight: 400;
     line-height: 29px;
@@ -570,12 +584,12 @@ body {
   width: 100%;
   padding: 30px 48px;
   margin-bottom: 36px;
-  border: 2px solid #aa7e52;
-  border-radius: 36px;
+  border: 1px solid #aa7e52;
+  border-radius: 14px;
   background: transparent;
   outline: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1rem;
   color: #fef9dc;
   font-weight: 600;
   cursor: pointer;
@@ -589,8 +603,8 @@ body {
   .form .input:focus {
     color: #f6c37d; }
   .form .input::placeholder {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600; }
     @media only screen and (max-width: 768px) {
@@ -602,15 +616,15 @@ body {
 
 .exercises .content {
   padding: 24px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1rem;
   color: #1f160a;
   font-weight: 600;
   line-height: 170%;
   text-align: center; }
 
 .exercises .accordion {
-  margin: 64px 0; }
+  margin: 40px 0; }
 
 .exercises .example-block {
   padding: 48px;
@@ -631,18 +645,18 @@ body {
   .exercises .example > *:not(:last-child) {
     margin-bottom: 36px; }
   .exercises .example__title {
-    font-family: "Montserrat", sans-serif;
+    font-family: "FoglihtenNo06";
     font-size: 36px;
     color: #1f160a;
-    font-weight: 700;
+    font-weight: normal;
     line-height: 140%; }
     @media only screen and (max-width: 768px) {
       .exercises .example__title {
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: initial; } }
   .exercises .example__desc {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #1f160a;
     font-weight: 600;
     line-height: 170%; }
@@ -650,8 +664,8 @@ body {
       .exercises .example__desc {
         line-height: inherit; } }
   .exercises .example__point, .exercises .example__content {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #1f160a;
     font-weight: 400;
     line-height: 170%; }
@@ -662,8 +676,8 @@ body {
 .calc-wrapper {
   text-align: center; }
   .calc-wrapper .block-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 2.25rem;
     color: #1f160a;
     font-weight: 700;
     line-height: 140%; }
@@ -672,17 +686,17 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center; }
+    .calc-wrapper .form .input-wrapper {
+      margin: 64px 15px 0px; }
     .calc-wrapper .form .input {
-      min-width: 152px;
-      max-width: 175px;
       padding: 20px 60px;
       margin: 12px;
       border-radius: 24px;
       border: none;
       background: #fef9dc;
       outline: none;
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-size: 1rem;
       color: #1f160a;
       font-weight: 700;
       text-align: center;
@@ -691,8 +705,8 @@ body {
       .calc-wrapper .form .input:active, .calc-wrapper .form .input:hover, .calc-wrapper .form .input:focus {
         opacity: 0.75; }
       .calc-wrapper .form .input::placeholder {
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-family: "Avenir Next Cyr", sans-serif;
+        font-size: 1rem;
         color: #1f160a;
         font-weight: 700; }
       .calc-wrapper .form .input--btn {
@@ -706,17 +720,17 @@ body {
       -moz-appearance: textfield; }
   .calc-wrapper .content {
     margin-bottom: 64px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #1f160a;
     font-weight: 400;
     line-height: 170%; }
     .calc-wrapper .content--form {
       color: #fef9dc; }
   .calc-wrapper .output {
-    margin: 64px 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    margin-top: 64px;
+    font-family: "FoglihtenNo06";
+    font-size: 2.25rem;
     color: #1f160a;
     font-weight: 500;
     line-height: 150%; }
@@ -733,11 +747,13 @@ body {
   .form-block .icon-wrapper {
     margin: 0 auto; }
   .form-block .form-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 2.25rem;
     color: #fef9dc;
     font-weight: 500;
     line-height: 140%; }
+    .form-block .form-title > strong {
+      font-family: "FoglihtenNo06"; }
     @media only screen and (max-width: 768px) {
       .form-block .form-title {
         font-size: 26px; } }
@@ -770,7 +786,7 @@ body {
 
 .about .subtitle {
   width: auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 36px;
   color: #fef9dc;
   font-weight: 500;
@@ -783,7 +799,7 @@ body {
 
 .about .list__item {
   padding-top: 36px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Avenir Next Cyr", sans-serif;
   font-size: 20px;
   color: #fef9dc;
   font-weight: 400;
@@ -818,13 +834,13 @@ body {
     .about .signature {
       padding: 10px; } }
   .about .signature__title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #1f160a;
     font-weight: 700;
     line-height: 170%; }
   .about .signature__desc {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Avenir Next Cyr", sans-serif;
     font-size: 20px;
     color: #1f160a;
     font-weight: 500;
@@ -857,8 +873,8 @@ body {
 
 .lessons .list__item {
   padding: 5px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1.25rem;
   color: #1f160a;
   font-weight: 500;
   line-height: 170%; }
@@ -904,41 +920,48 @@ body {
 
 .requirements .subtitle {
   padding-bottom: 48px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 2.25rem;
   color: #f6c37d;
   font-weight: 700;
   text-align: center; }
 
 @media only screen and (max-width: 768px) {
   .requirements {
-    font-size: 30px; } }
+    font-size: 1.785rem; } }
 
 .requirements .content {
   padding: 24px 36px 64px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  margin: 0 auto;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1rem;
   color: #fef9dc;
   font-weight: 600;
-  line-height: 170%;
+  line-height: 150%;
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .requirements .content {
       padding: 24px 10px;
-      font-size: 20px; } }
+      font-size: 1.25rem; } }
   .requirements .content--light {
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.5rem; }
     .requirements .content--light .content__accent {
       color: #fef9dc;
       font-weight: 600; }
   .requirements .content__accent {
     color: #f6c37d; }
   .requirements .content--border {
+    width: 920px;
+    max-width: 100%;
     padding: 24px 30px;
-    margin: 64px 0;
+    margin: 64px auto 40px;
     border: 2px solid #f6c37d;
     filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
     border-radius: 16px; }
+  .requirements .content--narrow {
+    width: 815px;
+    max-width: 100%; }
 
 .requirements .list {
   display: flex;
@@ -948,7 +971,7 @@ body {
   .requirements .list__item {
     width: 380px;
     max-width: 100%;
-    height: 265px;
+    height: 190px;
     margin: 33px;
     text-align: center; }
     @media only screen and (max-width: 768px) {
@@ -971,19 +994,20 @@ body {
         border-right: none;
         border-left: none; } }
   .requirements .list__num {
-    font-family: "Sunday";
-    font-size: 48px;
+    padding-bottom: 10px;
+    font-family: "FoglihtenNo06";
+    font-size: 3rem;
     color: #f6c37d;
     font-weight: normal; }
   .requirements .list__info {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
     line-height: 170%; }
     @media only screen and (max-width: 768px) {
       .requirements .list__info {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 500; } }
   .requirements .list--accordion {
     display: block;
@@ -993,8 +1017,8 @@ body {
   padding-top: 24px; }
   .requirements .list-info__text {
     display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
     line-height: 170%; }
@@ -1040,25 +1064,25 @@ body {
         padding: 24px 10px; } }
   .requirements .block__content {
     padding-bottom: 64px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1.5rem;
     color: #1f160a;
     font-weight: 400;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .block__content {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: inherit; } }
   .requirements .block__accent {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1.5rem;
     color: #1f160a;
     font-weight: 600;
     font-size: 24px;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .block__accent {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: inherit; } }
 
 .requirements .heading {
@@ -1069,6 +1093,9 @@ body {
 .requirements .bottom--inner > *,
 .requirements .bottom--inner > ul {
   padding-bottom: 0; }
+
+.requirements .list--accordion__counter {
+  font-weight: 600; }
 
 .price .light {
   padding-bottom: 390px; }
@@ -1085,7 +1112,7 @@ body {
   .price .list__item {
     width: 380px;
     max-width: 100%;
-    height: 306px;
+    min-height: 170px;
     margin: 33px 33px 0;
     text-align: center; }
     @media only screen and (max-width: 768px) {
@@ -1100,7 +1127,7 @@ body {
   .price .list__item:nth-child(2) {
     width: 446px;
     padding: 0 33px;
-    margin: 0;
+    margin: 33px 0 0;
     border-right: 1px solid rgba(170, 126, 82, 0.16);
     border-left: 1px solid rgba(170, 126, 82, 0.16); }
     @media only screen and (max-width: 768px) {
@@ -1109,13 +1136,13 @@ body {
         border-right: none;
         border-left: none; } }
   .price .list__num {
-    font-family: "Sunday";
+    font-family: "FoglihtenNo06";
     font-size: 48px;
     color: #1f160a;
     font-weight: normal; }
   .price .list__info {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #1f160a;
     font-weight: 600;
     line-height: 170%; }
@@ -1126,8 +1153,8 @@ body {
 
 .price .content {
   padding: 6px 36px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 1rem;
   color: #fef9dc;
   font-weight: 600;
   line-height: 170%;
@@ -1155,7 +1182,7 @@ body {
       color: #fef9dc; }
     @media only screen and (max-width: 768px) {
       .price .content__link {
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
 
 .price .divider {
   margin-top: 34px; }
@@ -1177,8 +1204,8 @@ body {
     margin-top: 60px; }
   .price .price-block__title {
     padding: 20px 60px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 2.25rem;
     color: #fef9dc;
     font-weight: 500;
     line-height: 150%;
@@ -1190,10 +1217,10 @@ body {
   .price .price-block__title-border {
     padding: 36px 64px;
     margin: 20px auto;
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
+    font-family: "FoglihtenNo06";
+    font-size: 3rem;
     color: #f6c37d;
-    font-weight: 700;
+    font-weight: normal;
     border: 2px dashed #f6c37d;
     filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
     border-radius: 36px; }
@@ -1212,7 +1239,7 @@ body {
       content: '';
       position: absolute;
       top: 50%;
-      width: 125px;
+      width: 100px;
       height: 1px;
       background-color: #f6c37d; }
 
@@ -1222,15 +1249,15 @@ body {
     position: relative;
     padding-left: 30px;
     margin-bottom: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
     line-height: 170%;
     text-align: left; }
     @media only screen and (max-width: 768px) {
       .price .list-info__item {
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
     .price .list-info__item::before {
       content: '●';
       position: absolute;
@@ -1264,8 +1291,8 @@ body {
   width: 950px;
   max-width: 100%;
   margin: 36px auto;
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 2.25rem;
   color: #fef9dc;
   font-weight: 500; }
   @media only screen and (max-width: 1024px) {
@@ -1278,8 +1305,8 @@ body {
     color: #f6c37d;
     font-weight: 700; }
   .dark .subtitle--shadow {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #aa7e52;
     font-weight: 700; }
 
@@ -1296,8 +1323,8 @@ body {
       padding: 18px 10px; } }
   .footer-block__title {
     padding: 20px 60px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 2.25rem;
     color: #fef9dc;
     font-weight: 500;
     line-height: 150%;
@@ -1309,8 +1336,8 @@ body {
   .footer-block__border {
     padding: 36px 64px;
     margin: 20px auto;
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 3rem;
     color: #f6c37d;
     font-weight: 700;
     border: 2px solid #f6c37d;
@@ -1326,8 +1353,8 @@ body {
     font-weight: 700; }
   .footer-block .content {
     padding: 6px 36px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
     line-height: 170%;
@@ -1342,7 +1369,7 @@ body {
 .contacts {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .contacts__item {
     display: flex;
     justify-content: center;
@@ -1353,8 +1380,8 @@ body {
         width: 100%;
         padding-bottom: 20px; } }
   .contacts__item > * {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
     font-weight: 400; }
   .contacts__icons {
@@ -1365,10 +1392,11 @@ body {
     display: flex;
     align-items: center;
     color: #fef9dc; }
-  .contacts__text--col {
-    flex-direction: column; }
   .contacts__title {
     font-weight: 600; }
+  @media only screen and (max-width: 768px) {
+    .contacts__text--col {
+      flex-direction: column; } }
 
 .social-icon {
   width: 24px;
@@ -1409,14 +1437,14 @@ body {
     text-align: center; }
     .footer .rights__title {
       padding-bottom: 16px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-size: 1rem;
       color: #f6c37d;
       font-weight: 700;
       line-height: 170%; }
     .footer .rights__desc {
-      font-family: "Montserrat", sans-serif;
-      font-size: 20px;
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-size: 1.25rem;
       color: #fef9dc;
       font-weight: 500;
       line-height: 170%; }
@@ -1462,24 +1490,24 @@ body {
     border-radius: 50%; }
   .visible-wrapper .slider__title {
     padding: 16px 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 2.25rem;
     color: #fef9dc;
     font-weight: 700;
     line-height: 140%; }
     @media only screen and (max-width: 768px) {
       .visible-wrapper .slider__title {
-        font-size: 30px;
+        font-size: 1.875rem;
         text-align: center; } }
   .visible-wrapper .slider__city {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #f6c37d;
     font-weight: 600;
     line-height: 170%; }
   .visible-wrapper .slider__text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1.25rem;
     color: #fef9dc;
     font-weight: 500; }
     @media only screen and (max-width: 768px) {

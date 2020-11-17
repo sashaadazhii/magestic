@@ -1,13 +1,13 @@
 .exercises {
   .content {
     padding: 24px 0;
-    @include font($font-primary, 18px, $color-dark, 600);
+    @include font($font-primary, 1rem, $color-dark, 600);
     line-height: 170%;
     text-align: center;
   }
 
   .accordion {
-    margin: 64px 0;
+    margin: 40px 0;
   }
 
   .example-block {
@@ -37,17 +37,17 @@
     }
 
     &__title {
-      @include font($font-primary, 36px, $color-dark, 700);
+      @include font($font-accent, 36px, $color-dark, normal);
       line-height: 140%;
 
       @include mobile {
-        font-size: 30px;
+        font-size: 1.875rem;
         line-height: initial;
       }
     }
 
     &__desc {
-      @include font($font-primary, 18px, $color-dark, 600);
+      @include font($font-primary, 1rem, $color-dark, 600);
       line-height: 170%;
 
       @include mobile {
@@ -57,7 +57,7 @@
 
     &__point,
     &__content {
-      @include font($font-primary, 18px, $color-dark, 400);
+      @include font($font-primary, 1rem, $color-dark, 400);
       line-height: 170%;
 
       @include mobile {

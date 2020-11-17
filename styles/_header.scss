@@ -19,7 +19,7 @@
     align-items: center;
     height: 100%;
 
-    & > * {
+    & > *:not(:nth-child(2)) {
       margin-bottom: 36px;
     }
 
@@ -36,7 +36,7 @@
 
   .content {
     padding: 24px 36px;
-    @include font($font-primary, 18px, $color-accent, 600);
+    @include font($font-primary, 1rem, $color-accent, 600);
     line-height: 29px;
     text-align: center;
 
@@ -52,7 +52,7 @@
 
     @include mobile {
       padding: 12px;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
@@ -82,10 +82,10 @@
   }
 
   &__num {
-    @include font($font-accent, 48px, $color-accent, normal);
+    @include font($font-accent, 3rem, $color-accent, normal);
   }
 
   &__text {
-    @include font($font-primary, 18px, $color-light, 600);
+    @include font($font-primary, 1rem, $color-light, 600);
   }
 }

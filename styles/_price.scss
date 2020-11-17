@@ -17,7 +17,7 @@
     &__item {
       width: 380px;
       max-width: 100%;
-      height: 306px;
+      min-height: 170px;
       margin: 33px 33px 0;
       text-align: center;
 
@@ -39,7 +39,7 @@
     &__item:nth-child(2) {
       width: 446px;
       padding: 0 33px;
-      margin: 0;
+      margin: 33px 0 0;
       border-right: 1px solid rgba(170, 126, 82, 0.16);
       border-left: 1px solid rgba(170, 126, 82, 0.16);
 
@@ -55,7 +55,7 @@
     }
 
     &__info {
-      @include font($font-primary, 18px, $color-dark, 600);
+      @include font($font-primary, 1rem, $color-dark, 600);
       line-height: 170%;
 
       @include mobile {
@@ -67,7 +67,7 @@
 
   .content {
     padding: 6px 36px;
-    @include font($font-primary, 18px, $color-accent, 600);
+    @include font($font-primary, 1rem, $color-accent, 600);
     line-height: 170%;
     text-align: center;
 
@@ -102,7 +102,7 @@
       }
 
       @include mobile {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
     }
   }
@@ -138,7 +138,7 @@
         font-size: 24px;
       }
 
-      @include font($font-primary, 36px, $color-accent, 500);
+      @include font($font-primary, 2.25rem, $color-accent, 500);
       line-height: 150%;
       text-align: center;
     }
@@ -146,7 +146,7 @@
     &__title-border {
       padding: 36px 64px;
       margin: 20px auto;
-      @include font($font-primary, 48px, $color-light, 700);
+      @include font($font-accent, 3rem, $color-light, normal);
       border: 2px dashed $color-light;
       filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
       border-radius: 36px;
@@ -171,7 +171,7 @@
         content: '';
         position: absolute;
         top: 50%;
-        width: 125px;
+        width: 100px;
         height: 1px;
         background-color: $color-light;
       }
@@ -185,12 +185,12 @@
       position: relative;
       padding-left: 30px;
       margin-bottom: 24px;
-      @include font($font-primary, 18px, $color-accent, 600);
+      @include font($font-primary, 1rem, $color-accent, 600);
       line-height: 170%;
       text-align: left;
 
       @include mobile {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
 
       &::before {
@@ -235,7 +235,7 @@
     width: 950px;
     max-width: 100%;
     margin: 36px auto;
-    @include font($font-primary, 36px, $color-accent, 500);
+    @include font($font-primary, 2.25rem, $color-accent, 500);
 
     @include tablet {
       width: auto;
@@ -250,7 +250,7 @@
     }
 
     &--shadow {
-      @include font($font-primary, 18px, $color-active, 700);
+      @include font($font-primary, 1rem, $color-active, 700);
     }
   }
 }

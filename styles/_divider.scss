@@ -14,7 +14,6 @@
   &::before {
     content: '';
     position: absolute;
-    // top: 50%;
     left: 0;
     width: calc(50% - 40px);
     height: 1px;
@@ -25,7 +24,6 @@
   &::after {
     content: '';
     position: absolute;
-    // top: 50%;
     right: 0;
     width: calc(50% - 40px);
     height: 1px;

@@ -20,7 +20,7 @@
       font-size: 30px;
     }
 
-    @include font($font-primary, 36px, $color-accent, 500);
+    @include font($font-primary, 2.25rem, $color-accent, 500);
     line-height: 150%;
     text-align: center;
   }
@@ -28,7 +28,7 @@
   &__border {
     padding: 36px 64px;
     margin: 20px auto;
-    @include font($font-primary, 48px, $color-light, 700);
+    @include font($font-primary, 3rem, $color-light, 700);
     border: 2px solid $color-light;
     border-radius: 16px;
     filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
@@ -47,7 +47,7 @@
 
   .content {
     padding: 6px 36px;
-    @include font($font-primary, 18px, $color-accent, 600);
+    @include font($font-primary, 1rem, $color-accent, 600);
     line-height: 170%;
     text-align: center;
 
@@ -65,7 +65,7 @@
 .contacts {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   &__item {
     display: flex;
@@ -80,7 +80,7 @@
   }
 
   &__item > * {
-    @include font($font-primary, 18px, $color-accent, 400);
+    @include font($font-primary, 1rem, $color-accent, 400);
   }
 
   &__icons {
@@ -97,12 +97,14 @@
     color: $color-accent;
   }
 
-  &__text--col {
-    flex-direction: column;
-  }
-
   &__title {
     font-weight: 600;
+  }
+
+  @include mobile {
+    &__text--col {
+      flex-direction: column;
+    }
   }
 }
 
@@ -162,12 +164,12 @@
     text-align: center;
     &__title {
       padding-bottom: 16px;
-      @include font($font-primary, 18px, $color-light, 700);
+      @include font($font-primary, 1rem, $color-light, 700);
       line-height: 170%;
     }
 
     &__desc {
-      @include font($font-primary, 20px, $color-accent, 500);
+      @include font($font-primary, 1.25rem, $color-accent, 500);
       line-height: 170%;
     }
   }

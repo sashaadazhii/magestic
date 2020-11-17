@@ -18,9 +18,9 @@
     }
 
     &__number {
-      @include font($font-accent, 84px, $color-accent, normal);
+      @include font($font-accent, 5.25rem, $color-accent, normal);
       @include mobile {
-        font-size: 60px;
+        font-size: 3.75rem;
       }
     }
 
@@ -44,7 +44,7 @@
 
       @include mobile {
         padding-left: 0;
-        font-size: 20px;
+        font-size: 1.25rem;
       }
 
       & > * {
@@ -53,8 +53,8 @@
     }
 
     &__title {
-      @include font($font-primary, 36px, $color-light, 600);
-      line-height: 140%;
+      @include font($font-accent, 2.25rem, $color-light, normal);
+      line-height: 150%;
 
       @include mobile {
         font-size: 24px;
@@ -63,14 +63,14 @@
     }
 
     &__subtitle {
-      @include font($font-primary, 18px, $color-active, 600);
+      @include font($font-primary, 1rem, $color-active, 600);
     }
 
     &__desc {
-      @include font($font-primary, 18px, $color-accent, 600);
+      @include font($font-primary, 1rem, $color-accent, 600);
 
       @include mobile {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
 
       p {
@@ -82,8 +82,8 @@
   .list {
     &__item {
       width: 75%;
-      @include font($font-primary, 18px, $color-light, 600);
-      line-height: 170%;
+      @include font($font-primary, 1rem, $color-light, 600);
+      line-height: 150%;
 
       @include mobile {
         width: 100%;
@@ -104,8 +104,8 @@
 
     &__item {
       position: relative;
-      @include font($font-primary, 18px, $color-accent, 400);
-      line-height: 170%;
+      @include font($font-primary, 1rem, $color-accent, 400);
+      line-height: 150%;
 
       @include mobile {
         font-size: 20px;

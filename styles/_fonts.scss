@@ -1,38 +1,116 @@
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf')
+//     format('truetype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf')
+//     format('truetype');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
+//     format('truetype');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Sunday';
+//   src: url('../assets/fonts/Sunday/sunday.ttf') format('truetype'),
+//     url('../assets/fonts/Sunday/sunday.woff') format('woff'),
+//     url('../assets/fonts/Sunday/sunday.woff2') format('woff2'),
+//     url('../assets/fonts/Sunday/sunday.svg') format('svg'),
+//     url('../assets/fonts/Sunday/sunday.eot') format('eot'),
+//     url('../assets/fonts/Sunday/sunday.eot') format('embedded-opentype'); /* IE6-IE8 */
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf')
-    format('truetype');
+  font-family: 'Avenir Next Cyr';
+  src: url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot');
+  src: local('../assets/fonts/AvenirNextCyr/Avenir Next Cyr Regular'),
+    local('AvenirNextCyr-Regular'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff')
+      format('woff'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf')
+      format('truetype');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf')
-    format('truetype');
+  font-family: 'Avenir Next Cyr';
+  src: url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot');
+  src: local('../assets/fonts/AvenirNextCyr/Avenir Next Cyr Medium'),
+    local('AvenirNextCyr-Medium'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff')
+      format('woff'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf')
+      format('truetype');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
-    format('truetype');
+  font-family: 'Avenir Next Cyr';
+  src: url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot');
+  src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff') format('woff'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf')
+      format('truetype');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Avenir Next Cyr';
+  src: url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot');
+  src: local('../assets/fonts/AvenirNextCyr/Avenir Next Cyr Bold'),
+    local('AvenirNextCyr-Bold'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff') format('woff'),
+    url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf')
+      format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Sunday';
-  src: url('../assets/fonts/Sunday/sunday.ttf') format('truetype'),
-    url('./assets/fonts/Sunday/sunday.woff') format('woff'),
-    url('./assets/fonts/Sunday/sunday.woff2') format('woff2'),
-    url('./assets/fonts/Sunday/sunday.svg') format('svg'),
-    url('./assets/fonts/Sunday/sunday.eot') format('eot'),
-    url('./assets/fonts/Sunday/sunday.eot') format('embedded-opentype'); /* IE6-IE8 */
+  font-family: 'FoglihtenNo06';
+  src: url('../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf');
+
+  src: local('../assets/fonts/FoglihtenNo06/FoglihtenNo06'),
+    local('FoglihtenNo06'),
+    url('../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf') format('opentype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url('AvenirNextCyr-Demi.eot');
+  src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+    url('AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+    url('AvenirNextCyr-Demi.woff') format('woff'),
+    url('AvenirNextCyr-Demi.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }

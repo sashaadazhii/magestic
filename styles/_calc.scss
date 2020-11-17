@@ -2,7 +2,7 @@
   text-align: center;
 
   .block-title {
-    @include font($font-primary, 36px, $color-dark, 700);
+    @include font($font-primary, 2.25rem, $color-dark, 700);
     line-height: 140%;
   }
 
@@ -12,16 +12,18 @@
     justify-content: center;
     align-items: center;
 
+    .input-wrapper {
+      margin: 64px 15px 0px;
+    }
+
     .input {
-      min-width: 152px;
-      max-width: 175px;
       padding: 20px 60px;
       margin: 12px;
       border-radius: 24px;
       border: none;
       background: $color-accent;
       outline: none;
-      @include font($font-primary, 18px, $color-dark, 700);
+      @include font($font-primary, 1rem, $color-dark, 700);
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
@@ -33,7 +35,7 @@
       }
 
       &::placeholder {
-        @include font($font-primary, 18px, $color-dark, 700);
+        @include font($font-primary, 1rem, $color-dark, 700);
       }
 
       &--btn {
@@ -54,7 +56,7 @@
 
   .content {
     margin-bottom: 64px;
-    @include font($font-primary, 18px, $color-dark, 400);
+    @include font($font-primary, 1rem, $color-dark, 400);
     line-height: 170%;
 
     &--form {
@@ -62,8 +64,8 @@
     }
   }
   .output {
-    margin: 64px 0;
-    @include font($font-primary, 36px, $color-dark, 500);
+    margin-top: 64px;
+    @include font($font-accent, 2.25rem, $color-dark, 500);
     line-height: 150%;
   }
 }
@@ -83,8 +85,12 @@
     margin: 0 auto;
   }
   .form-title {
-    @include font($font-primary, 36px, $color-accent, 500);
+    @include font($font-primary, 2.25rem, $color-accent, 500);
     line-height: 140%;
+
+    & > strong {
+      font-family: $font-accent;
+    }
 
     @include mobile {
       font-size: 26px;

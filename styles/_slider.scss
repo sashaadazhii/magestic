@@ -52,22 +52,22 @@
 
   &__title {
     padding: 16px 0;
-    @include font($font-primary, 36px, $color-accent, 700);
+    @include font($font-primary, 2.25rem, $color-accent, 700);
     line-height: 140%;
 
     @include mobile {
-      font-size: 30px;
+      font-size: 1.875rem;
       text-align: center;
     }
   }
 
   &__city {
-    @include font($font-primary, 18px, $color-light, 600);
+    @include font($font-primary, 1rem, $color-light, 600);
     line-height: 170%;
   }
 
   &__text {
-    @include font($font-primary, 20px, $color-accent, 500);
+    @include font($font-primary, 1.25rem, $color-accent, 500);
 
     @include mobile {
       font-size: 16px;
