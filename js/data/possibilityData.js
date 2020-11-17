@@ -64,4 +64,3 @@ const possibilities = [
     list: []
   }
 ]
-// export { possibilities };

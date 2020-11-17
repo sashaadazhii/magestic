@@ -11,7 +11,7 @@
 
   .content {
     padding: 24px 36px 64px;
-    @include font($font-primary, 24px, $color-accent, 600);
+    @include font($font-primary, 18px, $color-accent, 600);
     line-height: 170%;
     text-align: center;
 
@@ -88,7 +88,7 @@
     }
 
     &__info {
-      @include font($font-primary, 24px, $color-accent, 600);
+      @include font($font-primary, 18px, $color-accent, 600);
       line-height: 170%;
 
       @include mobile {
@@ -108,7 +108,7 @@
 
     &__text {
       display: flex;
-      @include font($font-primary, 24px, $color-accent, 600);
+      @include font($font-primary, 18px, $color-accent, 600);
       line-height: 170%;
 
       @include mobile {
@@ -167,7 +167,7 @@
 
     &__content {
       padding-bottom: 64px;
-      @include font($font-primary, 24px, $color-dark, 400);
+      @include font($font-primary, 18px, $color-dark, 400);
       line-height: 170%;
 
       @include mobile {
@@ -177,7 +177,7 @@
     }
 
     &__accent {
-      @include font($font-primary, 24px, $color-dark, 600);
+      @include font($font-primary, 18px, $color-dark, 600);
       font-size: 24px;
       line-height: 170%;
 
@@ -194,5 +194,9 @@
     & > strong {
       padding-right: 10px;
     }
+  }
+  .bottom--inner > *,
+  .bottom--inner > ul {
+    padding-bottom: 0;
   }
 }

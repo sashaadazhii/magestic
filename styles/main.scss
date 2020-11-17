@@ -42,7 +42,7 @@ body {
 
 .subtitle {
   margin-bottom: 40px;
-  @include font($font-primary, 24px, $color-dark, 700);
+  @include font($font-primary, 18px, $color-dark, 700);
   line-height: 170%;
   text-align: center;
 

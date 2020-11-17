@@ -55,7 +55,7 @@
     }
 
     &__info {
-      @include font($font-primary, 24px, $color-dark, 600);
+      @include font($font-primary, 18px, $color-dark, 600);
       line-height: 170%;
 
       @include mobile {
@@ -67,7 +67,7 @@
 
   .content {
     padding: 6px 36px;
-    @include font($font-primary, 24px, $color-accent, 600);
+    @include font($font-primary, 18px, $color-accent, 600);
     line-height: 170%;
     text-align: center;
 
@@ -185,7 +185,7 @@
       position: relative;
       padding-left: 30px;
       margin-bottom: 24px;
-      @include font($font-primary, 24px, $color-accent, 600);
+      @include font($font-primary, 18px, $color-accent, 600);
       line-height: 170%;
       text-align: left;
 
@@ -250,7 +250,7 @@
     }
 
     &--shadow {
-      @include font($font-primary, 24px, $color-active, 700);
+      @include font($font-primary, 18px, $color-active, 700);
     }
   }
 }

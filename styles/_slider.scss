@@ -62,7 +62,7 @@
   }
 
   &__city {
-    @include font($font-primary, 24px, $color-light, 600);
+    @include font($font-primary, 18px, $color-light, 600);
     line-height: 170%;
   }
 

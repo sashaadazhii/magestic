@@ -42,7 +42,7 @@
 
     &__text {
       padding: 30px 45px;
-      @include font($font-primary, 24px, $color-accent, 400);
+      @include font($font-primary, 18px, $color-accent, 400);
       line-height: 140%;
 
       @include tablet {

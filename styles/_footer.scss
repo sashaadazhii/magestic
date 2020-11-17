@@ -47,7 +47,7 @@
 
   .content {
     padding: 6px 36px;
-    @include font($font-primary, 24px, $color-accent, 600);
+    @include font($font-primary, 18px, $color-accent, 600);
     line-height: 170%;
     text-align: center;
 
@@ -80,7 +80,7 @@
   }
 
   &__item > * {
-    @include font($font-primary, 24px, $color-accent, 400);
+    @include font($font-primary, 18px, $color-accent, 400);
   }
 
   &__icons {
@@ -162,7 +162,7 @@
     text-align: center;
     &__title {
       padding-bottom: 16px;
-      @include font($font-primary, 24px, $color-light, 700);
+      @include font($font-primary, 18px, $color-light, 700);
       line-height: 170%;
     }
 

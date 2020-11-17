@@ -21,7 +21,7 @@
       border: none;
       background: $color-accent;
       outline: none;
-      @include font($font-primary, 24px, $color-dark, 700);
+      @include font($font-primary, 18px, $color-dark, 700);
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
@@ -33,7 +33,7 @@
       }
 
       &::placeholder {
-        @include font($font-primary, 24px, $color-dark, 700);
+        @include font($font-primary, 18px, $color-dark, 700);
       }
 
       &--btn {
@@ -54,7 +54,7 @@
 
   .content {
     margin-bottom: 64px;
-    @include font($font-primary, 24px, $color-dark, 400);
+    @include font($font-primary, 18px, $color-dark, 400);
     line-height: 170%;
 
     &--form {
