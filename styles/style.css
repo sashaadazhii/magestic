@@ -675,6 +675,8 @@ body {
   font-weight: 600;
   line-height: 150%;
   text-align: center; }
+  .exercises .content i {
+    font-weight: 400; }
 
 .exercises .accordion {
   margin: 40px 0; }
@@ -713,18 +715,12 @@ body {
     color: #1f160a;
     font-weight: 600;
     line-height: 150%; }
-    @media only screen and (max-width: 768px) {
-      .exercises .example__desc {
-        line-height: inherit; } }
   .exercises .example__point, .exercises .example__content {
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 1rem;
     color: #1f160a;
     font-weight: 400;
     line-height: 150%; }
-    @media only screen and (max-width: 768px) {
-      .exercises .example__point, .exercises .example__content {
-        line-height: inherit; } }
 
 .calc-wrapper {
   text-align: center; }
@@ -741,6 +737,9 @@ body {
     align-items: center; }
     .calc-wrapper .form .input-wrapper {
       margin: 64px 15px 0px; }
+      @media only screen and (max-width: 1024px) {
+        .calc-wrapper .form .input-wrapper {
+          margin: 15px 15px 0px; } }
     .calc-wrapper .form .input {
       padding: 20px 60px;
       margin: 12px;
@@ -1096,8 +1095,7 @@ body {
         font-family: inherit;
         font-size: 20px;
         color: #fef9dc;
-        font-weight: 500;
-        line-height: inherit; } }
+        font-weight: 500; } }
   .requirements .list-info__num {
     padding-right: 10px;
     color: #f6c37d; }
@@ -1140,8 +1138,7 @@ body {
     line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .block__content {
-        font-size: 1.25rem;
-        line-height: inherit; } }
+        font-size: 1.25rem; } }
   .requirements .block__accent {
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 1.5rem;
@@ -1150,8 +1147,7 @@ body {
     line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .block__accent {
-        font-size: 1.25rem;
-        line-height: inherit; } }
+        font-size: 1.25rem; } }
 
 .requirements .heading {
   display: flex; }
@@ -1368,8 +1364,7 @@ body {
     .dark .subtitle {
       width: auto;
       padding: 0 20px;
-      font-size: 1.5rem;
-      line-height: inherit; } }
+      font-size: 1.5rem; } }
   .dark .subtitle__bold {
     color: #f6c37d;
     font-weight: 700; }

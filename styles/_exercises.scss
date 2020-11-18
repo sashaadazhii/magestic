@@ -4,6 +4,10 @@
     @include font($font-primary, 1rem, $color-dark, 600);
     line-height: 150%;
     text-align: center;
+
+    i {
+      font-weight: 400;
+    }
   }
 
   .accordion {
@@ -49,20 +53,12 @@
     &__desc {
       @include font($font-primary, 1rem, $color-dark, 600);
       line-height: 150%;
-
-      @include mobile {
-        line-height: inherit;
-      }
     }
 
     &__point,
     &__content {
       @include font($font-primary, 1rem, $color-dark, 400);
       line-height: 150%;
-
-      @include mobile {
-        line-height: inherit;
-      }
     }
   }
 }

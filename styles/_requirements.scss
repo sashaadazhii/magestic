@@ -123,7 +123,6 @@
 
       @include mobile {
         @include font(inherit, 20px, $color-accent, 500);
-        line-height: inherit;
       }
     }
 
@@ -182,7 +181,6 @@
 
       @include mobile {
         font-size: 1.25rem;
-        line-height: inherit;
       }
     }
 
@@ -192,7 +190,6 @@
 
       @include mobile {
         font-size: 1.25rem;
-        line-height: inherit;
       }
     }
   }
