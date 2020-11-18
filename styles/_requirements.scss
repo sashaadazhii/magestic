@@ -67,7 +67,7 @@
       @include mobile {
         height: auto;
         margin: 0;
-        padding: 0;
+        padding: 20px 0 0;
       }
     }
 
@@ -86,7 +86,7 @@
       border-left: 1px solid rgba(170, 126, 82, 0.16);
 
       @include mobile {
-        padding: 0;
+        padding: 20px 0 0;
         border-right: none;
         border-left: none;
       }

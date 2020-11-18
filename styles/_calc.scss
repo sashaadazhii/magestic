@@ -71,7 +71,7 @@
     margin-top: 64px;
 
     &__title {
-      @include font($font-accent, 2.25rem, $color-dark, 500);
+      @include font($font-accent, 2.25rem, $color-dark, normal);
       line-height: 150%;
     }
 
@@ -106,6 +106,7 @@
   .icon-wrapper {
     margin: 0 auto;
   }
+
   .form-title {
     @include font($font-primary, 2.25rem, $color-accent, 500);
     line-height: 140%;

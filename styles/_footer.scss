@@ -36,6 +36,7 @@
     @include tablet {
       padding: 24px;
     }
+
     @include mobile {
       padding: 24px 10px;
     }
@@ -162,6 +163,7 @@
 
   .rights {
     text-align: center;
+
     &__title {
       padding-bottom: 16px;
       @include font($font-primary, 1rem, $color-light, 700);
@@ -169,7 +171,8 @@
     }
 
     &__desc {
-      @include font($font-primary, 1.25rem, $color-accent, 500);
+      padding-bottom: 20px;
+      @include font($font-primary, 1rem, $color-accent, 500);
       line-height: 150%;
     }
   }

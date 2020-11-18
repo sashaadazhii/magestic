@@ -11,7 +11,7 @@
   .form-content {
     padding: 24px;
     @include font($font-primary, 0.875rem, $color-accent, 400);
-    line-height: 29px;
+    line-height: 120%;
     text-align: center;
   }
 }

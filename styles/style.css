@@ -346,7 +346,6 @@ body {
         padding: 12px;
         font-size: 1.25rem; } }
 
-/*advantages*/
 .advantages {
   display: flex;
   flex-flow: row wrap;
@@ -628,7 +627,7 @@ body {
     font-size: 0.875rem;
     color: #fef9dc;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 120%;
     text-align: center; }
 
 .form-border {
@@ -707,8 +706,7 @@ body {
     line-height: 140%; }
     @media only screen and (max-width: 768px) {
       .exercises .example__title {
-        font-size: 1.875rem;
-        line-height: initial; } }
+        font-size: 1.875rem; } }
   .exercises .example__desc {
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 1rem;
@@ -785,7 +783,7 @@ body {
       font-family: "FoglihtenNo06";
       font-size: 2.25rem;
       color: #1f160a;
-      font-weight: 500;
+      font-weight: normal;
       line-height: 150%; }
     .calc-wrapper .output .prev,
     .calc-wrapper .output .author {
@@ -1046,7 +1044,7 @@ body {
       .requirements .list__item {
         height: auto;
         margin: 0;
-        padding: 0; } }
+        padding: 20px 0 0; } }
   .requirements .list__item:first-child {
     margin-left: 0; }
   .requirements .list__item:last-child {
@@ -1058,7 +1056,7 @@ body {
     border-left: 1px solid rgba(170, 126, 82, 0.16); }
     @media only screen and (max-width: 768px) {
       .requirements .list__item:nth-child(2) {
-        padding: 0;
+        padding: 20px 0 0;
         border-right: none;
         border-left: none; } }
   .requirements .list__num {
@@ -1188,6 +1186,9 @@ body {
     margin-left: 0; }
   .price .list__item:last-child {
     margin-right: 0; }
+    @media only screen and (max-width: 768px) {
+      .price .list__item:last-child {
+        margin: 33px 0 0; } }
   .price .list__item:nth-child(2) {
     width: 446px;
     padding: 0 33px;
@@ -1246,6 +1247,7 @@ body {
       color: #fef9dc; }
     @media only screen and (max-width: 768px) {
       .price .content__link {
+        padding: 0;
         font-size: 1.25rem; } }
 
 .price .divider {
@@ -1507,8 +1509,9 @@ body {
       font-weight: 700;
       line-height: 150%; }
     .footer .rights__desc {
+      padding-bottom: 20px;
       font-family: "Avenir Next Cyr", sans-serif;
-      font-size: 1.25rem;
+      font-size: 1rem;
       color: #fef9dc;
       font-weight: 500;
       line-height: 150%; }
