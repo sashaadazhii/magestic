@@ -34,10 +34,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'block'
   dots[slideIndex - 1].className += ' active'
 
-  if (deviceWidth <= 992) {
+  if (deviceWidth <= 1024) {
     slides[slideIndex - 1].style.display = 'flex'
   }
 
-  clearTimeout(timer)
-  timer = setTimeout(() => plusSlides(1), 3000)
+  // clearTimeout(timer)
+  // timer = setTimeout(() => plusSlides(1), 3000)
 }

@@ -6,7 +6,7 @@
   border-radius: 24px;
   background-color: $color-accent;
   @include font($font-primary, 1.25rem, $color-dark, 500);
-  line-height: 170%;
+  line-height: 150%;
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out;
@@ -24,7 +24,7 @@
   border-radius: 24px;
   background-color: $color-accent;
   @include font($font-primary, 1.25rem, $color-dark, 500);
-  line-height: 170%;
+  line-height: 150%;
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out;

@@ -70,7 +70,8 @@
 @font-face {
   font-family: 'Avenir Next Cyr';
   src: url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot');
-  src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+  src: local('../assets/fonts/AvenirNextCyr/Avenir Next Cyr Demi'),
+    local('AvenirNextCyr-Demi'),
     url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix')
       format('embedded-opentype'),
     url('../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff') format('woff'),

@@ -39,7 +39,7 @@ body {
   font-size: 1rem;
   color: #1f160a;
   font-weight: 700;
-  line-height: 170%;
+  line-height: 150%;
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .subtitle .subtitle {
@@ -145,7 +145,7 @@ body {
 @font-face {
   font-family: 'Avenir Next Cyr';
   src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
-  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
@@ -181,7 +181,7 @@ body {
   font-size: 1.25rem;
   color: #1f160a;
   font-weight: 500;
-  line-height: 170%;
+  line-height: 150%;
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out; }
@@ -200,7 +200,7 @@ body {
   font-size: 1.25rem;
   color: #1f160a;
   font-weight: 500;
-  line-height: 170%;
+  line-height: 150%;
   cursor: pointer;
   outline: none;
   transition: all 0.4s ease-in-out; }
@@ -380,7 +380,7 @@ body {
     @media only screen and (max-width: 1024px) {
       .info .block__content {
         padding: 12px 24px;
-        font-size: 24px; } }
+        font-size: 1.5rem; } }
   .info .block__accent {
     color: #f6c37d;
     font-weight: 600; }
@@ -389,14 +389,14 @@ body {
   .info .block__text {
     padding: 30px 45px;
     font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fef9dc;
     font-weight: 400;
     line-height: 150%; }
     @media only screen and (max-width: 1024px) {
       .info .block__text {
         padding: 15px 25px;
-        font-size: 20px; } }
+        font-size: 1.125rem; } }
   .info .block__double {
     display: flex;
     flex-flow: row wrap;
@@ -441,7 +441,7 @@ body {
     font-weight: normal; }
     @media only screen and (max-width: 768px) {
       .info .block--small__content {
-        font-size: 24px; } }
+        font-size: 1.5rem; } }
     @media only screen and (max-width: 430px) {
       .info .block--small__content {
         padding-top: 110px;
@@ -529,7 +529,7 @@ body {
   @media only screen and (max-width: 768px) {
     .gifts .list__item {
       width: 100%;
-      font-size: 20px;
+      font-size: 1.125rem;
       line-height: 120%;
       font-weight: 400; } }
 
@@ -548,7 +548,7 @@ body {
     line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .gifts .list--ul__item {
-        font-size: 20px; } }
+        font-size: 1.125rem; } }
     .gifts .list--ul__item::before {
       content: '•';
       position: absolute;
@@ -564,16 +564,13 @@ body {
     .form-wrapper {
       padding: 15px; } }
   .form-wrapper .form-content {
-    padding: 24px 0 0;
+    padding: 24px;
     font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     color: #fef9dc;
     font-weight: 400;
     line-height: 29px;
     text-align: center; }
-    @media only screen and (max-width: 768px) {
-      .form-wrapper .form-content {
-        font-size: 14px; } }
 
 .form-border {
   border: 1px dashed #f6c37d;
@@ -589,27 +586,24 @@ body {
   background: transparent;
   outline: none;
   font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #fef9dc;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out; }
   @media only screen and (max-width: 768px) {
     .form .input {
-      padding: 15px;
-      font-size: 22px; } }
+      padding: 15px; } }
   .form .input:active, .form .input:hover, .form .input:focus {
     opacity: 0.75; }
-  .form .input:focus {
-    color: #f6c37d; }
   .form .input::placeholder {
     font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #fef9dc;
     font-weight: 600; }
     @media only screen and (max-width: 768px) {
       .form .input::placeholder {
-        font-size: 18px; } }
+        font-size: 1rem; } }
   .form .input--btn {
     background-color: #f6c37d;
     color: #1f160a; }
@@ -620,7 +614,7 @@ body {
   font-size: 1rem;
   color: #1f160a;
   font-weight: 600;
-  line-height: 170%;
+  line-height: 150%;
   text-align: center; }
 
 .exercises .accordion {
@@ -659,7 +653,7 @@ body {
     font-size: 1rem;
     color: #1f160a;
     font-weight: 600;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .exercises .example__desc {
         line-height: inherit; } }
@@ -668,7 +662,7 @@ body {
     font-size: 1rem;
     color: #1f160a;
     font-weight: 400;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .exercises .example__point, .exercises .example__content {
         line-height: inherit; } }
@@ -676,10 +670,10 @@ body {
 .calc-wrapper {
   text-align: center; }
   .calc-wrapper .block-title {
-    font-family: "Avenir Next Cyr", sans-serif;
+    font-family: "FoglihtenNo06";
     font-size: 2.25rem;
     color: #1f160a;
-    font-weight: 700;
+    font-weight: normal;
     line-height: 140%; }
   .calc-wrapper .form {
     display: flex;
@@ -719,12 +713,12 @@ body {
     .calc-wrapper .form input[type='number'] {
       -moz-appearance: textfield; }
   .calc-wrapper .content {
-    margin-bottom: 64px;
+    margin: 40px 0 64px;
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 1rem;
     color: #1f160a;
     font-weight: 400;
-    line-height: 170%; }
+    line-height: 150%; }
     .calc-wrapper .content--form {
       color: #fef9dc; }
   .calc-wrapper .output {
@@ -756,12 +750,12 @@ body {
       font-family: "FoglihtenNo06"; }
     @media only screen and (max-width: 768px) {
       .form-block .form-title {
-        font-size: 26px; } }
+        font-size: 1.5rem; } }
   .form-block .content {
     color: #fef9dc; }
     @media only screen and (max-width: 768px) {
       .form-block .content {
-        font-size: 14px; } }
+        font-size: 0.875rem; } }
 
 .about .container {
   margin-top: -280px; }
@@ -787,27 +781,27 @@ body {
 .about .subtitle {
   width: auto;
   font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #fef9dc;
   font-weight: 500;
-  line-height: 170%;
+  line-height: 150%;
   text-align: left; }
   @media only screen and (max-width: 768px) {
     .about .subtitle {
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: initial; } }
 
 .about .list__item {
   padding-top: 36px;
   font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fef9dc;
   font-weight: 400;
-  line-height: 170%; }
+  line-height: 150%; }
   @media only screen and (max-width: 768px) {
     .about .list__item {
       padding: 24px 5px 0 10px;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: inherit; } }
 
 .about .list__emp {
@@ -838,13 +832,13 @@ body {
     font-size: 1rem;
     color: #1f160a;
     font-weight: 700;
-    line-height: 170%; }
+    line-height: 150%; }
   .about .signature__desc {
     font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #1f160a;
     font-weight: 500;
-    line-height: 170%; }
+    line-height: 150%; }
 
 .learning .title {
   padding-bottom: 50px; }
@@ -877,7 +871,7 @@ body {
   font-size: 1.25rem;
   color: #1f160a;
   font-weight: 500;
-  line-height: 170%; }
+  line-height: 150%; }
 
 .lessons .list__counter {
   padding-right: 5px;
@@ -1004,7 +998,7 @@ body {
     font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .list__info {
         font-size: 1.25rem;
@@ -1021,7 +1015,7 @@ body {
     font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .list-info__text {
         font-family: inherit;
@@ -1078,7 +1072,6 @@ body {
     font-size: 1.5rem;
     color: #1f160a;
     font-weight: 600;
-    font-size: 24px;
     line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .requirements .block__accent {
@@ -1145,7 +1138,7 @@ body {
     font-size: 1rem;
     color: #1f160a;
     font-weight: 600;
-    line-height: 170%; }
+    line-height: 150%; }
     @media only screen and (max-width: 768px) {
       .price .list__info {
         font-size: 20px;
@@ -1157,7 +1150,7 @@ body {
   font-size: 1rem;
   color: #fef9dc;
   font-weight: 600;
-  line-height: 170%;
+  line-height: 150%;
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .price .content {
@@ -1213,7 +1206,7 @@ body {
     @media only screen and (max-width: 768px) {
       .price .price-block__title {
         padding: 20px;
-        font-size: 24px; } }
+        font-size: 1.5rem; } }
   .price .price-block__title-border {
     padding: 36px 64px;
     margin: 20px auto;
@@ -1253,7 +1246,7 @@ body {
     font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
-    line-height: 170%;
+    line-height: 150%;
     text-align: left; }
     @media only screen and (max-width: 768px) {
       .price .list-info__item {
@@ -1262,7 +1255,7 @@ body {
       content: '●';
       position: absolute;
       left: 0;
-      font-size: 15px;
+      font-size: 1rem;
       color: #f6c37d; }
   .price .list-info__accent {
     color: #f6c37d; }
@@ -1299,7 +1292,7 @@ body {
     .dark .subtitle {
       width: auto;
       padding: 0 20px;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: inherit; } }
   .dark .subtitle__bold {
     color: #f6c37d;
@@ -1332,7 +1325,7 @@ body {
     @media only screen and (max-width: 768px) {
       .footer-block__title {
         padding: 20px;
-        font-size: 30px; } }
+        font-size: 1.875rem; } }
   .footer-block__border {
     padding: 36px 64px;
     margin: 20px auto;
@@ -1357,7 +1350,7 @@ body {
     font-size: 1rem;
     color: #fef9dc;
     font-weight: 600;
-    line-height: 170%;
+    line-height: 150%;
     text-align: center; }
     @media only screen and (max-width: 768px) {
       .footer-block .content {
@@ -1441,32 +1434,30 @@ body {
       font-size: 1rem;
       color: #f6c37d;
       font-weight: 700;
-      line-height: 170%; }
+      line-height: 150%; }
     .footer .rights__desc {
       font-family: "Avenir Next Cyr", sans-serif;
       font-size: 1.25rem;
       color: #fef9dc;
       font-weight: 500;
-      line-height: 170%; }
+      line-height: 150%; }
 
 .visible-wrapper {
   position: relative;
   width: 100%;
   height: 594px;
-  margin: 64px 0;
-  padding: 0 0 64px; }
-  @media screen and (max-width: 992px) {
+  margin: 64px 0; }
+  @media only screen and (max-width: 1024px) {
     .visible-wrapper {
       height: 914px; } }
 
 .visible-wrapper .slider {
-  padding-bottom: 64px;
   transition: all 0.3s; }
   .visible-wrapper .slider__item {
     justify-content: space-between;
     align-items: flex-start;
     animation-name: fade; }
-    @media screen and (max-width: 992px) {
+    @media only screen and (max-width: 1024px) {
       .visible-wrapper .slider__item {
         flex-direction: column;
         align-items: center; } }
@@ -1500,19 +1491,23 @@ body {
         font-size: 1.875rem;
         text-align: center; } }
   .visible-wrapper .slider__city {
-    font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1rem;
-    color: #f6c37d;
-    font-weight: 600;
-    line-height: 170%; }
-  .visible-wrapper .slider__text {
+    padding-bottom: 16px;
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 1.25rem;
+    color: #f6c37d;
+    font-weight: 600;
+    line-height: 150%; }
+  .visible-wrapper .slider__text {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 1rem;
     color: #fef9dc;
-    font-weight: 500; }
-    @media only screen and (max-width: 768px) {
+    font-weight: 500;
+    line-height: 150%; }
+    @media only screen and (max-width: 1024px) {
       .visible-wrapper .slider__text {
-        font-size: 16px; } }
+        font-size: 0.875rem; } }
+  .visible-wrapper .slider__p {
+    padding-bottom: 16px; }
 
 .slider-dots {
   position: absolute;

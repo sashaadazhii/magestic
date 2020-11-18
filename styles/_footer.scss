@@ -17,7 +17,7 @@
 
     @include mobile {
       padding: 20px;
-      font-size: 30px;
+      font-size: 1.875rem;
     }
 
     @include font($font-primary, 2.25rem, $color-accent, 500);
@@ -48,7 +48,7 @@
   .content {
     padding: 6px 36px;
     @include font($font-primary, 1rem, $color-accent, 600);
-    line-height: 170%;
+    line-height: 150%;
     text-align: center;
 
     @include mobile {
@@ -165,12 +165,12 @@
     &__title {
       padding-bottom: 16px;
       @include font($font-primary, 1rem, $color-light, 700);
-      line-height: 170%;
+      line-height: 150%;
     }
 
     &__desc {
       @include font($font-primary, 1.25rem, $color-accent, 500);
-      line-height: 170%;
+      line-height: 150%;
     }
   }
 }

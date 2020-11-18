@@ -56,7 +56,7 @@
 
     &__info {
       @include font($font-primary, 1rem, $color-dark, 600);
-      line-height: 170%;
+      line-height: 150%;
 
       @include mobile {
         font-size: 20px;
@@ -68,7 +68,7 @@
   .content {
     padding: 6px 36px;
     @include font($font-primary, 1rem, $color-accent, 600);
-    line-height: 170%;
+    line-height: 150%;
     text-align: center;
 
     @include mobile {
@@ -135,7 +135,7 @@
 
       @include mobile {
         padding: 20px;
-        font-size: 24px;
+        font-size: 1.5rem;
       }
 
       @include font($font-primary, 2.25rem, $color-accent, 500);
@@ -186,7 +186,7 @@
       padding-left: 30px;
       margin-bottom: 24px;
       @include font($font-primary, 1rem, $color-accent, 600);
-      line-height: 170%;
+      line-height: 150%;
       text-align: left;
 
       @include mobile {
@@ -197,7 +197,7 @@
         content: '●';
         position: absolute;
         left: 0;
-        font-size: 15px;
+        font-size: 1rem;
         color: $color-light;
       }
     }
@@ -240,7 +240,7 @@
     @include tablet {
       width: auto;
       padding: 0 20px;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: inherit;
     }
 

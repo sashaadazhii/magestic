@@ -7,7 +7,7 @@
     &__item {
       padding: 5px 0;
       @include font($font-primary, 1.25rem, $color-dark, 500);
-      line-height: 170%;
+      line-height: 150%;
     }
 
     &__counter {

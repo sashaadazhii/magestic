@@ -3,15 +3,15 @@
   width: 100%;
   height: 594px;
   margin: 64px 0;
-  padding: 0 0 64px;
+  // padding: 0 0 64px;
 
-  @media screen and (max-width: 992px) {
+  @include tablet {
     height: 914px;
   }
 }
 
 .visible-wrapper .slider {
-  padding-bottom: 64px;
+  // padding-bottom: 64px;
   transition: all 0.3s;
 
   &__item {
@@ -19,7 +19,7 @@
     align-items: flex-start;
     animation-name: fade;
 
-    @media screen and (max-width: 992px) {
+    @include tablet {
       flex-direction: column;
       align-items: center;
     }
@@ -62,16 +62,22 @@
   }
 
   &__city {
-    @include font($font-primary, 1rem, $color-light, 600);
-    line-height: 170%;
+    padding-bottom: 16px;
+    @include font($font-primary, 1.25rem, $color-light, 600);
+    line-height: 150%;
   }
 
   &__text {
-    @include font($font-primary, 1.25rem, $color-accent, 500);
+    @include font($font-primary, 1rem, $color-accent, 500);
+    line-height: 150%;
 
-    @include mobile {
-      font-size: 16px;
+    @include tablet {
+      font-size: 0.875rem;
     }
+  }
+
+  &__p {
+    padding-bottom: 16px;
   }
 }
 
