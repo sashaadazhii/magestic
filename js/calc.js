@@ -11,6 +11,9 @@ const form = document.getElementById('form')
 form.addEventListener('submit', (event) => {
   event.preventDefault()
   let numDom = document.getElementById('numDom')
+  let desc = document.getElementById('desc')
+  let prev = document.getElementById('prev')
+  let author = document.getElementById('author')
 
   let day = document.getElementById('day').value
   let month = document.getElementById('month').value
@@ -40,9 +43,9 @@ form.addEventListener('submit', (event) => {
   console.log(numDom)
   numDom.textContent = number.num //number
   titleDom.textContent = ' (' + number.title + ')' //title
+  prev.textContent = number.prev
+  author.textContent = number.author
+  desc.textContent = number.desc
 
   document.forms['form'].reset()
-
-  console.log(number)
-  console.log(rez)
 })

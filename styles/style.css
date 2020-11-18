@@ -1,4 +1,64 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+ul[class],
+ol[class] {
+  padding: 0; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+ul[class],
+ol[class] {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
 html {
   font-size: 16px; }
 
@@ -68,6 +128,48 @@ body {
     width: 100%;
     height: 100%; }
 
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot");
+  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FoglihtenNo06';
+  src: url("../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf");
+  src: local("../assets/fonts/FoglihtenNo06/FoglihtenNo06"), local("FoglihtenNo06"), url("../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("AvenirNextCyr-Demi.eot");
+  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Demi.woff") format("woff"), url("AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 .btn-wrapper {
   display: flex;
   justify-content: center;
@@ -127,48 +229,6 @@ body {
     padding: 12px;
     border-radius: 24px;
     font-size: 1.125rem; } }
-
-@font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
-  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
-  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
-  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot");
-  src: local("../assets/fonts/AvenirNextCyr/Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../assets/fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'FoglihtenNo06';
-  src: url("../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf");
-  src: local("../assets/fonts/FoglihtenNo06/FoglihtenNo06"), local("FoglihtenNo06"), url("../assets/fonts/FoglihtenNo06/FoglihtenNo06.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Demi.eot");
-  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Demi.woff") format("woff"), url("AvenirNextCyr-Demi.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
 
 .top {
   display: flex;
@@ -297,7 +357,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 350px;
+    height: 290px;
     margin: 40px;
     text-align: center; }
   .advantages__icon {
@@ -389,14 +449,13 @@ body {
   .info .block__text {
     padding: 30px 45px;
     font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #fef9dc;
     font-weight: 400;
     line-height: 150%; }
     @media only screen and (max-width: 1024px) {
       .info .block__text {
-        padding: 15px 25px;
-        font-size: 1.125rem; } }
+        padding: 15px 25px; } }
   .info .block__double {
     display: flex;
     flex-flow: row wrap;
@@ -722,12 +781,30 @@ body {
     .calc-wrapper .content--form {
       color: #fef9dc; }
   .calc-wrapper .output {
-    margin-top: 64px;
-    font-family: "FoglihtenNo06";
-    font-size: 2.25rem;
-    color: #1f160a;
-    font-weight: 500;
-    line-height: 150%; }
+    margin-top: 64px; }
+    .calc-wrapper .output__title {
+      font-family: "FoglihtenNo06";
+      font-size: 2.25rem;
+      color: #1f160a;
+      font-weight: 500;
+      line-height: 150%; }
+    .calc-wrapper .output .prev,
+    .calc-wrapper .output .author {
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-size: 1rem;
+      color: #1f160a;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 150%;
+      text-align: left; }
+    .calc-wrapper .output .desc {
+      margin-top: 24px;
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-size: 1rem;
+      color: #1f160a;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left; }
 
 .form-block {
   padding: 48px;
@@ -781,28 +858,26 @@ body {
 .about .subtitle {
   width: auto;
   font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 2.25rem;
+  font-size: 1.2rem;
   color: #fef9dc;
   font-weight: 500;
   line-height: 150%;
-  text-align: left; }
+  text-align: left;
+  font-style: italic; }
   @media only screen and (max-width: 768px) {
     .about .subtitle {
-      font-size: 1.5rem;
-      line-height: initial; } }
+      font-size: 1.5rem; } }
 
 .about .list__item {
   padding-top: 36px;
   font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #fef9dc;
   font-weight: 400;
   line-height: 150%; }
   @media only screen and (max-width: 768px) {
     .about .list__item {
-      padding: 24px 5px 0 10px;
-      font-size: 1rem;
-      line-height: inherit; } }
+      padding: 24px 5px 0 10px; } }
 
 .about .list__emp {
   color: #f6c37d;
@@ -816,7 +891,7 @@ body {
 .about .signature {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 734px;
   max-width: 100%;
@@ -1189,9 +1264,6 @@ body {
   border-radius: 36px; }
   @media only screen and (max-width: 1024px) {
     .price .price-block {
-      padding: 18px 24px; } }
-  @media only screen and (max-width: 1024px) {
-    .price .price-block {
       padding: 18px 10px; } }
   .price .price-block .icon-wrapper {
     margin-top: 60px; }
@@ -1222,7 +1294,8 @@ body {
         padding: 24px; } }
     @media only screen and (max-width: 768px) {
       .price .price-block__title-border {
-        padding: 24px 10px; } }
+        padding: 24px 10px;
+        font-size: 1.875rem; } }
   .price .price-block__accent {
     font-weight: 700; }
   .price .price-block__shadow {
@@ -1235,6 +1308,9 @@ body {
       width: 100px;
       height: 1px;
       background-color: #f6c37d; }
+      @media only screen and (max-width: 768px) {
+        .price .price-block__shadow::before {
+          width: 70px; } }
 
 .price .list-info {
   margin-bottom: 60px; }
@@ -1284,10 +1360,10 @@ body {
   width: 950px;
   max-width: 100%;
   margin: 36px auto;
-  font-family: "Avenir Next Cyr", sans-serif;
+  font-family: "FoglihtenNo06";
   font-size: 2.25rem;
   color: #fef9dc;
-  font-weight: 500; }
+  font-weight: normal; }
   @media only screen and (max-width: 1024px) {
     .dark .subtitle {
       width: auto;
@@ -1298,10 +1374,10 @@ body {
     color: #f6c37d;
     font-weight: 700; }
   .dark .subtitle--shadow {
-    font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1rem;
+    font-family: "FoglihtenNo06";
+    font-size: 1.5rem;
     color: #aa7e52;
-    font-weight: 700; }
+    font-weight: normal; }
 
 .footer-block {
   padding: 18px 36px;
@@ -1478,7 +1554,8 @@ body {
     width: 100%;
     height: 100%;
     padding: 48px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    object-fit: cover; }
   .visible-wrapper .slider__title {
     padding: 16px 0;
     font-family: "Avenir Next Cyr", sans-serif;
@@ -1544,63 +1621,3 @@ body {
     opacity: 0.4; }
   to {
     opacity: 1; } }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box; }
-
-ul[class],
-ol[class] {
-  padding: 0; }
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0; }
-
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5; }
-
-ul[class],
-ol[class] {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-a:not([class]) {
-  text-decoration-skip-ink: auto; }
-
-img {
-  max-width: 100%;
-  display: block; }
-
-input,
-button,
-textarea,
-select {
-  font: inherit; }
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important; } }

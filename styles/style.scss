@@ -1,8 +1,9 @@
 @import 'variables';
+@import 'base';
 @import 'main';
-@import 'buttons';
-@import 'icons';
 @import 'fonts';
+@import 'mixin';
+@import 'buttons';
 @import 'accordion';
 @import 'header';
 @import 'divider';
@@ -19,5 +20,3 @@
 @import 'price';
 @import 'footer';
 @import 'slider';
-@import 'mixin';
-@import 'base';

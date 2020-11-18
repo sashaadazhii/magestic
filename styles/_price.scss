@@ -120,10 +120,6 @@
     border-radius: 36px;
 
     @include tablet {
-      padding: 18px 24px;
-    }
-
-    @include tablet {
       padding: 18px 10px;
     }
     .icon-wrapper {
@@ -156,6 +152,7 @@
       }
       @include mobile {
         padding: 24px 10px;
+        font-size: 1.875rem;
       }
     }
 
@@ -174,6 +171,10 @@
         width: 100px;
         height: 1px;
         background-color: $color-light;
+
+        @include mobile {
+          width: 70px;
+        }
       }
     }
   }
@@ -235,7 +236,7 @@
     width: 950px;
     max-width: 100%;
     margin: 36px auto;
-    @include font($font-primary, 2.25rem, $color-accent, 500);
+    @include font($font-accent, 2.25rem, $color-accent, normal);
 
     @include tablet {
       width: auto;
@@ -250,7 +251,7 @@
     }
 
     &--shadow {
-      @include font($font-primary, 1rem, $color-active, 700);
+      @include font($font-accent, 1.5rem, $color-active, normal);
     }
   }
 }

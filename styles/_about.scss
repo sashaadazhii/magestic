@@ -29,26 +29,24 @@
 
   .subtitle {
     width: auto;
-    @include font($font-primary, 2.25rem, $color-accent, 500);
+    @include font($font-primary, 1.2rem, $color-accent, 500);
     line-height: 150%;
     text-align: left;
+    font-style: italic;
 
     @include mobile {
       font-size: 1.5rem;
-      line-height: initial;
     }
   }
 
   .list {
     &__item {
       padding-top: 36px;
-      @include font($font-primary, 1.25rem, $color-accent, 400);
+      @include font($font-primary, 1rem, $color-accent, 400);
       line-height: 150%;
 
       @include mobile {
         padding: 24px 5px 0 10px;
-        font-size: 1rem;
-        line-height: inherit;
       }
     }
 
@@ -67,7 +65,7 @@
   .signature {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 734px;
     max-width: 100%;
