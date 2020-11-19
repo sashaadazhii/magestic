@@ -306,6 +306,14 @@ button.swiper-pagination-bullet {
   .swiper-pagination-bullet {
   margin: 0 24px;
 }
+
+@media screen and (max-width: 600px) {
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 15px;
+  }
+}
 .swiper-container-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
