@@ -163,13 +163,6 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Demi.eot");
-  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Demi.woff") format("woff"), url("AvenirNextCyr-Demi.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
 .btn-wrapper {
   display: flex;
   justify-content: center;
@@ -939,7 +932,8 @@ body {
   padding-bottom: 50px; }
 
 .learning .subtitle {
-  color: #1f160a; }
+  color: #1f160a;
+  font-size: 1.5rem; }
 
 .learning .icon-wrapper--small {
   margin: 0 auto 24px; }
