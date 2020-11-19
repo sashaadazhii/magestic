@@ -32,6 +32,7 @@
     }
 
     &__accent {
+      font-size: 1.25rem;
       color: $color-light;
     }
 
@@ -40,6 +41,7 @@
       max-width: 100%;
       padding: 24px 30px;
       margin: 64px auto 40px;
+      font-size: 1.25rem;
       border: 2px solid #f6c37d;
       filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
       border-radius: 16px;

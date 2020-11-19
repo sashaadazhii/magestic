@@ -60,7 +60,7 @@ select {
     scroll-behavior: auto !important; } }
 
 html {
-  font-size: 16px; }
+  font-size: 18px; }
 
 body {
   background-color: #1f160a; }
@@ -127,6 +127,10 @@ body {
   .icon-wrapper img {
     width: 100%;
     height: 100%; }
+
+@media only screen and (max-width: 1024px) {
+  .mobile-clear {
+    display: none; } }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
@@ -239,6 +243,8 @@ body {
   transition: all 0.4s ease; }
   @media only screen and (max-width: 768px) {
     .scrollToTopBtn {
+      bottom: 20px;
+      right: 20px;
       width: 40px;
       height: 40px; } }
 
@@ -354,6 +360,7 @@ body {
     .header .content__accent {
       color: #f6c37d; }
     .header .content--border {
+      font-size: 1.25rem;
       border: 2px solid #f6c37d;
       filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
       border-radius: 16px; }
@@ -1033,12 +1040,14 @@ body {
       color: #fef9dc;
       font-weight: 600; }
   .requirements .content__accent {
+    font-size: 1.25rem;
     color: #f6c37d; }
   .requirements .content--border {
     width: 920px;
     max-width: 100%;
     padding: 24px 30px;
     margin: 64px auto 40px;
+    font-size: 1.25rem;
     border: 2px solid #f6c37d;
     filter: drop-shadow(0px 10px 24px rgba(246, 195, 125, 0.2));
     border-radius: 16px; }
@@ -1249,6 +1258,7 @@ body {
     max-width: 100%;
     padding: 24px 30px;
     margin: 0 auto;
+    font-size: 1.25rem;
     background-color: #1f160a;
     border-radius: 16px; }
   .price .content__accent {
@@ -1464,7 +1474,7 @@ body {
         padding-bottom: 20px; } }
   .contacts__item > * {
     font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #fef9dc;
     font-weight: 400; }
   .contacts__icons {
@@ -1526,12 +1536,16 @@ body {
       font-weight: 700;
       line-height: 150%; }
     .footer .rights__desc {
-      padding-bottom: 20px;
+      padding-bottom: 20px; }
+    .footer .rights__link {
       font-family: "Avenir Next Cyr", sans-serif;
       font-size: 1rem;
       color: #fef9dc;
       font-weight: 500;
-      line-height: 150%; }
+      line-height: 150%;
+      transition: color 0.3s ease-in-out; }
+      .footer .rights__link:hover, .footer .rights__link:active {
+        color: #f6c37d; }
 
 .slider {
   justify-content: space-between;
@@ -1551,6 +1565,8 @@ body {
     background-size: cover; }
     @media screen and (max-width: 992px) {
       .slider__img {
+        width: 270px;
+        height: 270px;
         margin-right: 0; } }
   .slider__info {
     display: flex;
@@ -1590,6 +1606,3 @@ body {
         font-size: 0.875rem; } }
   .slider__p {
     padding-bottom: 16px; }
-
-.swiper-container {
-  width: 100%; }

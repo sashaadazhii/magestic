@@ -18,6 +18,8 @@
     background-size: cover;
 
     @media screen and (max-width: 992px) {
+      width: 270px;
+      height: 270px;
       margin-right: 0;
     }
   }
@@ -64,8 +66,4 @@
   &__p {
     padding-bottom: 16px;
   }
-}
-
-.swiper-container {
-  width: 100%;
 }

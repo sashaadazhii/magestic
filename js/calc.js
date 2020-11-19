@@ -40,7 +40,6 @@ form.addEventListener('submit', (event) => {
   }
 
   number = numbers.find((num) => num.num === rez)
-  console.log(numDom)
   numDom.textContent = number.num //number
   titleDom.textContent = ' (' + number.title + ')' //title
   prev.textContent = number.prev
