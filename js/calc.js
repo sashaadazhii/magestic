@@ -36,7 +36,14 @@ form.addEventListener('submit', (event) => {
   rez = sum
 
   if (rez > 21) {
-    rez = sum % 9 || 9
+    if ((sum % 9 || 9) > 21) {
+      rez = sum % 9 || 9
+      console.log(rez)
+    } else {
+      rez = (rez % 10) + Math.floor(rez / 10)
+
+      console.log(rez)
+    }
   }
 
   number = numbers.find((num) => num.num === rez)
